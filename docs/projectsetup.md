@@ -1,6 +1,19 @@
 
 # Setting Up a Project
 
+What you will learn:
+
+- [Project Dashboard](#project-dashboard).
+- [Setting up a Project for a New User](#setting-up-a-project-for-new-user).
+- [Setting up a Project for Existing Users](#setting-up-a-project-for-existing-user).
+- [Hot Keys](#hot-keys).
+- [Supported File Types](#supported-file-type).
+- [Reload Project](#reload-project).
+- [Basic Mine Plan Workflow](#basic-mine-plan-workflow).
+
+____________________________________________________________________
+
+
 
 ## Project Dashboard
 
@@ -11,14 +24,14 @@ The project dashboard displays a list of recent projects, along with their descr
 
 ## Setting up a Project for New User
 
-1. Click **New Project** button in the upper right corner. A new window will appear.
+1. Click the **New Project** button in the upper right corner. A new window will appear.
 
     ![Image](/image/New proejct Details.jpg)
 &nbsp;
 
 2.	Enter the Project Name and Description of the project.
 
-3.	Click **Next**. A Settings window with configuration option will appear.
+3.	Click **Next**. A Settings window with configuration options will appear.
 
 
     ![Image](/image/Setting page.jpg)
@@ -27,12 +40,13 @@ The project dashboard displays a list of recent projects, along with their descr
 
 
     The project settings page also provides you with the ability to import values from another project and export data from the current project's configuration. 
-    To import values, click **Choose File** button. The entries will be instantly updated. Click **Export** button to save the entries for later use in another project.
+    To import values, click the **Choose File** button. The entries will be instantly updated. Click the **Export** button to save the entries for later use in another project.
 
-    **NOTE: Only the JSON format is supported for storing the values. The Project Settings window entries are stored to the database for the entire project.**
+    **NOTE: Only the JSON format is supported for storing the values. The Project Settings window entries are stored in the database for the entire project.**
 
 
 4. If you are a new user and do not have access to a JSON file, please enter the details in the following fields:
+
 
     **Drawing Window Settings**
    
@@ -96,3 +110,56 @@ The project dashboard displays a list of recent projects, along with their descr
 &nbsp;
 
 2.	To proceed with a project, select it from the list. It will direct you to the project's page.    
+
+
+
+## Hot Keys
+
+Keyboard shortcuts are keys or combinations of keys that provide an alternative method of performing an action that you would normally perform with a mouse.
+
+Here are several common keyboard shortcuts:
+    ![Image](/image/hot_keys.jpg)
+
+## Supported File Type
+
+Opencontour uses GeoJSON files (with the extension ".json"). JSON is a popular data format that is used extensively in JavaScript. For additional information on this file format, visit https://geojson.org/.
+
+JSON files can be exported in two different ways.
+
+- Group files
+- Individual files
+
+Individual file types contain one layer, while group files contain numerous layers. Individual layers are defined as those options in Table XX that do not end in the word "Group." Using group files eliminates the need to drag and drop individual layers into a project. The **la** attribute is used to populate the layers.
+
+Each project's layers must be re-added upon opening. It is recommended to export any fresh work from your project prior to closing. For additional information on save/export, refer to XXXX.
+
+![Image](/image/Supported_File_Type.jpg)
+
+## Reload Project
+
+At any point, you can close the active project by reloading the browser from the top browser address bar. To close the active project, click **reload** button. A confirmation message is displayed
+
+![Image](/image/reload.jpg)
+
+## Basic Mine Plan Workflow
+
+
+![Image](/image/basic_mine_workflow.jpg)
+
+
+The standard procedure for completing an Opencontour open pit project is as follows:
+
+1. In the Base layer, load a contour file containing the topography of the project. Additionally, load the Model and Geotech layers. See Section XXXX of the Help Guide for more information.
+2.	Create a Cutter pit shape guided by a loaded Model, Refer to section XXXX for more details.
+3.	Build any dumps or leach pad cells. Refer to section XXXX for more details.
+4.	The Cutter is used to cut the contours. This creates CutterResult & BaseResult layers. Refer to section XXXX for more details.
+5.	Check the Density, ow property (ow) & Ore Tns variable and verify the Routing variable. Density values in the Model layer should be expressed in tns/volume. Refer to XXXX  for more details.
+6.	Create the Mineplan by utilising the loaded Model and CutterResult. Refer to section XXXX for more details.
+7.	Insert Schedule Features, such as hauling, loading, stockpiles, leach cells & dumps.  Use the Schedule Features portion of the window as in Figure XXXX. Drag these to their desired locations and adjust the elevation. Refer to section XXXX for more details.
+8.	Build Roads from the mining activity to the applicable Schedule Features, Refer to section XXXX for more details.  Or, select the Roads option None to run the schedule without using roads. Refer to section XXXX for more details.
+9.	Create a Schedule for mining & processing tonnages on a period by period basis, Refer to section XXXX for more details.
+10.	Run the schedule. Refer to section XXXX for more details.
+11.	Run associated schedule scripts. Refer to section XXXX for more details.
+12.	View Charts. Refer to section XXXX for more details.
+13.	Run Reports. Refer to section XXXX for more details.
+14.	Build Period Maps. Refer to section XXXX for more details.
