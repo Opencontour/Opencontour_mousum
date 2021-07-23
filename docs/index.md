@@ -3,16 +3,16 @@ site_name: MkLorum
 #
 ## Overview 
 
-Opencontour® is mining based software that provides cost-benefit mine design options and provides foresight into designs that maximize productivity. It uses CAD functionality for open pit mine planning.
+Opencontour® is mining-based software that provides cost-benefit mine design options and provides foresight into designs that maximize productivity. It uses CAD functionality for open-pit mine planning.
 
-The mine cuts and model are linked to a physical and financial scheduler. Opencontour® is a browser-based application that uses open source services to delivering rapid results.
+The mine cuts and models are linked to a physical and financial scheduler. Opencontour® is a browser-based application that uses open-source services to deliver rapid results.
 
 **NOTE: Updates are performed automatically, users do not need to download and install patches.**
 
 
 ## Purpose 
 
-The purpose of this document is to provide an overview of Opencontour mine design software and to explains how to sign up for mine design software and use it to create projects.
+The purpose of this document is to provide an overview of Opencontour mine design software and to explain how to sign up for the software and use it to create projects.
 
 ## Intended Audience
 
