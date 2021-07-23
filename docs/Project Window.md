@@ -16,7 +16,7 @@ The Project window is used to create and manipulate opencontour projects using v
 
 ![Image](/image/proejct_window_dashboard.jpg)
 
-The following menu is available in the project window:
+In the project window, you can access the following menus:
 
 - Dropdown Menu
 - Main Menu
