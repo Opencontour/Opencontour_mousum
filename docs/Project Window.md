@@ -12,7 +12,7 @@ ____________________________________________________________________
 
 ## Overview
 
-The Project window is used to create and manipulate various opencontour projects using various elements, such as panels, bars, windows, etc. After the project setting is complete, the new project will be created. The project's name and version number are displayed in the upper right-hand corner of the Project Window.
+The Project window is used to create and manipulate opencontour projects using various elements, such as panels, bars, windows, etc. After the project setting is complete, the new project will be created. The project's name and version number are displayed in the upper right-hand corner of the Project Window.
 
 ![Image](/image/proejct_window_dashboard.jpg)
 
