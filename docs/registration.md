@@ -1,5 +1,13 @@
 
 # Registration
+What you will learn:
+
+- [New User Registration](#new-user).
+- [Existing User Login](#existing-user).
+- [Reset Password](#reset-password).
+
+____________________________________________________________________
+
 ## New User
 
 For new user registration, follow the instructions below.
@@ -14,7 +22,7 @@ For new user registration, follow the instructions below.
 
 2. Click **Sign-Up**. A new window will appear.
 
-3. Provide appropriate details for new user in the following fields:  
+3. Provide appropriate details for new users in the following fields:  
 
     | &nbsp;&nbsp;Field Name  &nbsp;&nbsp; &nbsp;   | Description |
     | ----------- | ----------- |
@@ -31,12 +39,12 @@ For new user registration, follow the instructions below.
 
 6. Click **Register Account**.
 
-    The system will send an activation link to registered email address.
+    The system will send an activation link to the registered email address.
 
 
 ## Existing User
 
-Existing users who already have the User ID and Password can sign up by clicking the Sign-Up link on the Sign in page.
+Existing users who already have a User ID and Password can sign up by clicking the Sign-Up link on the Sign in page.
 
 
 ## Reset Password
