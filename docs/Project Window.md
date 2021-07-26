@@ -781,7 +781,7 @@ Select the **Provided Grid** radio button to populate the entire grid with data 
 
 ##### Leach > Add
 
-   ![Image](/image/Figure 4 75  Dropdown Menu’s Leach-Add Options.jpg)
+   ![Image](/image/Figure 4 75  Dropdown MenuÆs Leach-Add Options.jpg)
 
 
 
