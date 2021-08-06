@@ -4,5 +4,5 @@ nav:
     - Introduction: index.md
     - User Registration: registration.md
     - Setting Up a Project: projectsetup.md
-    - Opencontour Project Window: Project Window.md
+    - Mine Design Core Module: Project Window.md
 theme: readthedocs    
