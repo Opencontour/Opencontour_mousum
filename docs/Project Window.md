@@ -3,11 +3,15 @@
 
 What you will learn:
 
-- [Overview](#overview)
-- [Dropdown Menu](#dropdown-menu)
-- [Main Menu](#main-menu)
-- [Utility Menu](#utility-menu)
-- [Layer Menu](#layer-menu)
+- [Overview](#41-overview)
+- [Dropdown Menu](#42-dropdown-menu)
+- [Main Menu](#43-main-menu)
+- [Utility Menu](#44-utility-menu)
+- [Layer Menu](#45-layer-menu)
+- [Screen Menu](#46-screen-menu)
+- [Message Bar](#47-message-bar)
+
+
 
 
 
@@ -16,6 +20,7 @@ What you will learn:
 
 
 ## 4.1 Overview
+
 
 The Project window is used to create and manipulate various Opencontour projects using various elements, such as panels, bars, windows, etc. After finalizing the **Project Settings**, the new project will be created. The project's name and version number are displayed in the upper right-hand corner of the **Project Window**.
 
@@ -1116,3 +1121,71 @@ Additional properties can also be added/edited in the **Mineplan** layer by clic
 
 This layer includes all of the features required for the Schedule. (fleets, location icons, etc.) 
 Each schedule Feature can be dragged to its preferred horizontal plane location using the **Main Menu's** Drag features button. While doing this operation, it may be useful to hide other layers to avoid dragging them to undesirable positions. When features are inserted at an elevation indicated in the **Drawing Window**, that elevation is allocated to all features.
+
+
+## 4.6 Screen Menu
+
+The actions performed on the screen menu have an effect on the content displayed in the Drawing Window. The Screen Menu options are initially retrieved from the Project Settings panel. The button on the far left of the Message bar can be used to collapse or extend this menu.
+
+**NOTE: The Screen Menu settings are temporary and will be lost upon saving and restarting a project. To ensure continuity in a project, the values and options selected/entered will only be retained in the project if they are entered in the Project Settings window button in the Utility Menu.**
+
+![Image](/image/Screen_Menu.jpg)
+
+![Image](/image/Screen_Menu_table_1.jpg)
+
+![Image](/image/Screen_Menu_table_2.jpg)
+
+
+
+#### Labels
+
+To make the selected property visible in the **Drawing Window**, select the layer from the dropdown menu and turn it on in the **Layer Menu**.  Layers can contain the same properties, such as data.pn, and all layers that are checked in the **Layer Menu** will display this label.
+
+
+#### Legend
+
+The Legend allows you to customize the display colors and bins. One legend, with six property options is available.  Individual rows cannot be imported or exported into an existing legend. There is a limit of one Legend Name per project. Legends that are imported and exported should encompass the entire legend for the project.
+
+![Image](/image/Legend.jpg)
+
+To access the legend, click the **Utility Menu > Project Properties** option. The Project Properties screen, which contains the Legend section, will be displayed.
+
+To create a legend in a project, use the following instructions:
+
+1. Click the **Project Properties** button.
+
+2. Enter the Legend name in the **Legend Name** section.
+
+3. Enter the desired shaded property, overwriting the entry in the Property column. The property entry must match the property case and syntax as contained in the Mineplan or Model layer.
+
+4. Enter the numerical bins and shading colors in the **Project Properties** window.
+
+5. Click **Add Legend** button to import a previously exported legend by browsing to the file. Click **Delete** button to remove the imported legend.
+
+6. To save this to the Project, click the **Save Legend** button. Click the **Export** checkbox if you wish to create a saved export file of the Legend for use in another project. You will be prompted to save the Legend with the filename “legend.json”, rename this to “Au_legend.json”. The saved Legend will appear in the dropdown list of saved legends for the project.
+
+
+
+7. Check the **Legend** box in the **Screen Menu** of the Drawing Window (or press the keyboard shortcut, **'l'**). Select the Layer containing the desired Property and then select it in the Legend section of the **Screen Menu**.
+
+
+
+## 4.7 Message Bar
+
+The Message bar is located between the **Drawing Window** and the **Screen Menu**. 
+
+![Image](/image/message_bar.jpg)
+
+
+The Message bar displays the follwing information:
+
+- Strike
+
+- Wall angles
+
+- Distances (when the measuring tool is used)
+
+- The easting and northing coordinates, elevation, and position of the bench.
+
+The elevation position indicates whether the contour is at the MidBench, Bench, or NonBench elevation level.
+
