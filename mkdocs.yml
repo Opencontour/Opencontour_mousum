@@ -5,4 +5,5 @@ nav:
     - User Registration: registration.md
     - Setting Up a Project: projectsetup.md
     - Mine Design Core Module: Project Window.md
+    - Opencontour Heap Leach Stacking: Opencontour Heap Leach Stacking.md
 theme: readthedocs    
