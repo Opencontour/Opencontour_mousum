@@ -1,5 +1,8 @@
 
-# Setting Up a Project
+# Chapter 3 Setting Up a Project
+
+
+
 
 What you will learn:
 
@@ -14,15 +17,14 @@ What you will learn:
 ____________________________________________________________________
 
 
-
-## Project Dashboard
+### Project Dashboard
 
 The project dashboard displays a list of recent projects, along with their descriptions and creation dates. For new users, the projects list will be initially empty. If you are an existing user, you can view the list of projects.
 
 ![Image](/image/dashboard.jpg)
 
 
-## Setting up a Project for New User
+### Setting up a Project for New User
 
 1. Click the **New Project** button in the upper right corner. A new window will appear.
 
@@ -102,7 +104,7 @@ The project dashboard displays a list of recent projects, along with their descr
 &nbsp;
 5.	Click **Save Project** button to save the setup and begin working on the new project.
 
-## Setting up a Project for Existing User
+### Setting up a Project for Existing User
 
 1.	In the dashboard, existing users can see a list of all the projects that they are currently working on.
 
@@ -113,14 +115,14 @@ The project dashboard displays a list of recent projects, along with their descr
 
 
 
-## Hot Keys
+### Hot Keys
 
 Keyboard shortcuts are keys or combinations of keys that provide an alternative method of performing an action that you would normally perform with a mouse.
 
 Here are several common keyboard shortcuts:
     ![Image](/image/hot_keys.jpg)
 
-## Supported File Type
+### Supported File Type
 
 Opencontour uses GeoJSON files (with the extension ".json"). JSON is a popular data format that is used extensively in JavaScript. For additional information on this file format, visit https://geojson.org/.
 
@@ -135,13 +137,13 @@ Each project's layers must be re-added upon opening. It is recommended to export
 
 ![Image](/image/Supported_File_Type.jpg)
 
-## Reload Project
+### Reload Project
 
 At any point, you can close the active project by reloading the browser from the top browser address bar. To close the active project, click **reload** button. A confirmation message is displayed
 
 ![Image](/image/reload.jpg)
 
-## Basic Mine Plan Workflow
+### Basic Mine Plan Workflow
 
 
 ![Image](/image/basic_mine_workflow.jpg)

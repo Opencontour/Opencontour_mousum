@@ -1,5 +1,5 @@
+# Chapter 2 User Registration
 
-# Registration
 What you will learn:
 
 - [New User Registration](#new-user).
