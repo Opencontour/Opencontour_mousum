@@ -4,7 +4,7 @@
 What you will learn:
 
 - [Overview](#overview)
-- [Stacking button](#stacking-button)
+- [Stacking Menu](#stacking-menu)
 - [Utility Menu](#utility-menu)
 
 
@@ -14,7 +14,7 @@ What you will learn:
 
 
 
-## Stacking Button  
+## Stacking Menu  
 
 Pressing the Utility Menu’s **Stacking** button will launch the Leach Stacking module.  This is used to assign leach panel properties to the CutterResult, Model, and Mineplan layers. Leach pads were ﬁrst designed as filler layers. These may be separated into vertical lifts. The Cut Contour with Cutter/Filler function is run to get the CutterResult shapes of material to be stacked. 
 
@@ -133,7 +133,10 @@ This file must contain:
 
 ###### Populate Mineplan Button
 
-The **Populate Mineplan** button in the Leach Stacking **Home tab** will distribute the Mineplan tons into each discretized CutterResult shape. The filler sequence, direction (dir), density (dens) and ow designations (min and ow max) are considered in this function.
+The **Populate Mineplan** button in the Leach Stacking **Home tab** will distribute the Mineplan tons into each discretized CutterResult shape. The filler sequence, direction (dir), density (dens) and ow designations (min and ow max) are considered in this function.  A message will appear stating how many Mineplan blocks have been created, as shown.
+
+![Image](/image/populate mineplan button.jpg)
+
 
 **Note:**
 
@@ -154,6 +157,9 @@ The **Populate Mineplan** button in the Leach Stacking **Home tab** will distrib
 <hr>
 
 ### Leach Stacking module  > Grid Tab
+
+The grid can either use the project extents as the origin (decided when constructing the Base) or can be a smaller region within the Base layer extents.  Once constructed, the grid should be exported and logically named, for example, ProjectName_100x100_model.json describes a 100x100 foot grid.  A descriptor can be added to this name for the lift height.
+
 
 Click **Utility Menu  > Stacking  > Grid Tab**. The Leach Stacking Module grid tab will appear.
 
@@ -326,9 +332,87 @@ The **Update Solution** function can be used to populate solution layer properti
 ![Image](/image/Update Solution Layer Properties.jpg)
 
 
+### Stacking Procedure
+
+When starting a stacking project in Opencontour, there are specific steps to follow.  A suggested folder structure is shown below.
+
+![Image](/image/Stacking_folder-structure.jpg)
+
+There are two categories of stacking:
+
+- **Historical Stacking** – It includes all material currently placed on the pad.  The site will have surveyed as build DXF files to outline the stacking areas.
+
+- **Forecast Stacking** – Stacking future material, building on the Historical Stacking surface.  
 
 
+#### Historical Stacking
+
+**Step 1 - Base** 
+
+To start the process of creating the Historical stacking project, the starting topography, or Base, must be created from ‘as build’ surfaces, which is often accomplished by importing supplied DXF into the Base layer. For future use, the final Base layer should be exported and clearly named, e.g. Date MasterTopo base.json. 
+
+The project extents, MidBench and BenchHeight, and site density need to be considered and checked/saved in the **Project Settings** during Base creation.  The Base layer usually represents the liner topography.
+
+**Step 2 - Lifts** 
+
+The lifts of each stage in the historical stacking are bounded by supplied ‘as build’ surfaces (DXF’s).  The DXF’s should be logically named, e.g., Stage1Lift1, or Stage3Lift2.  The Import layer can be used to contain the imported DXF’s and the fillers can be drawn in their respective stacking order, guided by the Import layer contents.
+
+The lifts can be composed of several fillers.  The shapes of the fillers depend on the stacking method used, i.e., truck or radial stackers.  After constructing the first lift in Opencontour, it is recommended that the user Cut Contours with a Cutter/Filler.
 
 
+**Step 3 - Grid** 
+
+The grid, as described in the Grid Tab, is stored in the Model layer in Opencontour.  It will be used for each historical stacking project.  The next step is to Discretize, as described in the color button reference of the Leach Stacking Module.
+
+A good place to store the Grid file is under the ‘Working’, because it is used in both Historical and Forecast stacking projects.
 
 
+**Step 4 - Mineplan**
+
+Once the CSV file is created, it is imported into the Mineplan layer and the **Populate Mineplan** function from the Leach Stacking Module can be run.
+
+After running **Populate Mineplan**, the CutterResult layer should be exported and given a descriptive name, for example, LP30 EOM YearMonth CR.json. This should be saved in the folder '05 CutterResults'. Save the entire project file in the folder '04 Historical Stacking' as an'All (Model)' type.
+
+
+**Step 5 - Final Historical Stacking Project**
+
+To combine each stage and lift into a single project, a new project must be created.  Drag in the original Base created for example, Date_MasterTopo_base.json. Drag the CutterResult files for each lift and stage from the ‘05_CutterResults’ folder.
+
+Using the project's CutterResult layer, subsequent historical stacking can be added to this project. A Solution layer should be added to this project.  
+
+
+**Step 6 - 3D Visualization**
+
+In the **Display>3D>New Timeline**, an animation of the stacking project can be viewed with shading and labelling based on the properties in the CutterResult layer. The fillers should be stacked in their respective orders.
+
+
+#### Forecast Stacking
+
+The forecast stacking follows the respective steps described above, but with some differences explained below.
+
+**Step 1 - Base** 
+
+In a new project for the forecast stacking, use the most recent export of the BaseResult from the Historical Stacking project as the Base (make sure the Base is active before dragging in the BaseResult file).
+
+
+**Step 2 - Lifts** 
+
+Forecast stacking stages are defined by designed surfaces (DXFs), and the approach is identical to that detailed above in the Historical Stacking section.
+
+
+**Step 2 - Grid** 
+
+To discretize the designed fillers, drag the previously constructed grid, e.g. 'ProjectName 100x100 model.json', into the model layer.
+
+
+**Step 4 - Mineplan**
+
+A CSV can be built using the forecast Mineplan data, using the properties previously described.  The Populate Mineplan function is run, with no adjustments in the filler densities.  
+
+**Step 5 - 3D Visualization**
+
+
+An animation of the stacking project should be checked in the **Display>3D>New Timeline**.
+
+
+**NOTE:** **If the project contains many fillers, it can be divided into multiple projects. In this case, the Opencontour project files created for each should be titled logically. Scripts and Reports can be run on the CutterResult layer to obtain information about previously stacked and leached material, as well as forecast stacking.**
