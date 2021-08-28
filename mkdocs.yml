@@ -1,9 +1,10 @@
 site_name: Mine Design Help Guide
 site_url: https://example.com/
 nav:
-    - Introduction: index.md
-    - User Registration: registration.md
-    - Setting Up a Project: projectsetup.md
-    - Mine Design Core Module: Project Window.md
-    - Opencontour Heap Leach Stacking: Opencontour Heap Leach Stacking.md
+    - Quick Reference Guide: quickreferenceguide.md
+    - Chapter 1 Introduction: index.md
+    - Chapter 2 User Registration: registration.md
+    - Chapter 3 Setting Up a Project: projectsetup.md
+    - Chapter 4 Mine Design Core Module: Project Window.md
+    - Chapter 5 Opencontour Heap Leach Stacking: Opencontour Heap Leach Stacking.md
 theme: readthedocs    

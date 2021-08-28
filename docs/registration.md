@@ -51,8 +51,8 @@ Existing users who already have a User ID and Password can sign up by clicking t
 
 If you forget your password, you can request to reset your password.
 
-1.	Click Forgot Password
+1.	Click **Forgot Password**
 
-2.	Enter your email, then click Reset Password
+2.	Enter your email, then click **Reset Password**
 
     A verification email with a link to reset the password will be sent your registered email address.

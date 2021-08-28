@@ -454,7 +454,7 @@ To access the help documentation, visit help.opencontourXXXX.com
 
   ![Image](/image/Figure 4 76 Dropdown Menu, Help Options.jpg)
 
--  **Cheat Sheet**: Provides an overview of the Opencontour layout and techniques.
+-  **Quick Reference Guide**: Provides an overview of the Opencontour layout and techniques.
 
 -  **Help Guide**: Opens a new browser tab with a searchable full Help Guide page.
 
@@ -464,10 +464,6 @@ To access the help documentation, visit help.opencontourXXXX.com
 
 
 The Main menu provides access to tools for creating and editing projects. It enables you to view and control the context of the currently running task or workflow.
-
-
-  ![Image](/image/Figure 5 1 Main Menu.jpg)
-
 
 - When a button is available for selection, it is shown in light green ![Image](/image/green_button.jpg). 
 
@@ -503,17 +499,17 @@ Select the layer from the **Layer Menu** to display the hidden buttons.
 
 <hr>
 
-- **Add Cutter Layer** : Adds another Cutter layer. Each additional layer will be sequentially numbered and the Phase Name (pn) should be edited for each.
+- **Add Cutter Layer** ![Image](/image/Add Cutter Layer.jpg): Adds another Cutter layer. Each additional layer will be sequentially numbered and the Phase Name (pn) should be edited for each.
 <hr>
 
-- **Add Filler Layer** : Adds another Filler layer.  Each additional layer will be sequentially numbered and the Phase Name (pn) should be edited for each.
+- **Add Filler Layer** ![Image](/image/Add Filler Layer.jpg): Adds another Filler layer.  Each additional layer will be sequentially numbered and the Phase Name (pn) should be edited for each.
 <hr>
 
-- **Non Bench** ![Image](/image/Non Bench.jpg): Non Bench will remove all features if it does not lie on a project’s mid bench interval elevation. To use:
+- **Non Bench** : Non Bench will remove all features if it does not lie on a project’s mid bench interval elevation. To use:
 
     1. Activate the Layer from the **Layer Menu** that contains features that are not at project elevation levels.
 
-    2. Click the Non Bench ![Image](/image/Non Bench.jpg) button to remove them all from the layer at each erroneous elevation. This option is very useful when importing a DXF file with horizontal slicing every 3 feet and significant curves every 9 feet. This is not necessary for contours of 3 and 6 feet.
+    2. Click the Non Bench button to remove them all from the layer at each erroneous elevation. This option is very useful when importing a DXF file with horizontal slicing every 3 feet and significant curves every 9 feet. This is not necessary for contours of 3 and 6 feet.
 <hr>
 
 - **Fix All Polygons**![Image](/image/Fix All Polygons.jpg): Use of the Fix The All Polygons function ensures that the displayed features contain beginning and ending vertices.To use:
@@ -535,7 +531,7 @@ Select the layer from the **Layer Menu** to display the hidden buttons.
 
 <hr>
 
-- **Display Vertice Number** : The Display Vertice Number function is useful for displaying the point order in a contour.  It is possible to see kinks in the numbers presented when they overlap each other.To use:
+- **Display Vertice Number** ![Image](/image/Display Vertice Number.jpg): The Display Vertice Number function is useful for displaying the point order in a contour.  It is possible to see kinks in the numbers presented when they overlap each other.To use:
     
     1. Activate the Cutter or Filler layer from the Layer Menu. 
     2. Select the feature tool ![Image](/image/feature tool.jpg), and select a contour to be labelled.
@@ -558,18 +554,18 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
 
 <hr>
 
-- **Clear Toe Crest**![Image](/image/Add Toe Crest.jpg): Opencontour can remove added toe and crest lines in a layer. Only available when the Cutter, Filler or BaseResult layer is active. 
+- **Clear Toe Crest**![Image](/image/clear Toe Crest.jpg): Opencontour can remove added toe and crest lines in a layer. Only available when the Cutter, Filler or BaseResult layer is active. 
     
     1. Activate the Cutter layer that needs toe and crest lines removed.
-    2. Click the **Clear Toe Crest**![Image](/image/Add Toe Crest.jpg) button.
+    2. Click the **Clear Toe Crest**![Image](/image/clear Toe Crest.jpg) button.
 
 
 <hr>
 
-- **Add Box** : Click this button to add a border around the extents of the topography contours at a selected elevation. Available when Base layer is active.  
+- **Add Box** ![Image](/image/add box.jpg): Click this button to add a border around the extents of the topography contours at a selected elevation. Available when Base layer is active.  
 <hr>
 
-- **Select feature** : This option enables selection of the desired feature when the relevant layer is selected from the Layer Menu.  
+- **Select feature** ![Image](/image/feature tool.jpg): This option enables selection of the desired feature when the relevant layer is selected from the Layer Menu.  
 <hr>
 
 - **Select features with a Box**![Image](/image/Select features with a Box.jpg): 
@@ -579,35 +575,35 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
     3. All features in the active layer that are within or touch the drawn box will be seleced and highlighted in green.
 <hr>
 
-- **Add Haul/Load Features** : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, availability, utilization, efficiency, and fleet count. Loaders will be given a tnsPerHr productivity rating.  Trucks require rated speeds for gradients that are low, medium, and high & a ‘truckfactor’ (truck payload) & rank.  The units used in the speeds must match those of the project files (i.e. imperial or metric).  
+- **Add Haul/Load Features** ![Image](/image/Add Haul-Load Features.jpg) : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, availability, utilization, efficiency, and fleet count. Loaders will be given a tnsPerHr productivity rating.  Trucks require rated speeds for gradients that are low, medium, and high & a ‘truckfactor’ (truck payload) & rank.  The units used in the speeds must match those of the project files (i.e. imperial or metric).  
 <hr>
 
-- **Add Dump Features** : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, capacity, tns (populated during a schedule run), and name.  Available when Schedule layer is active.  
+- **Add Dump Features** ![Image](/image/Add Dump Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, capacity, tns (populated during a schedule run), and name.  Available when Schedule layer is active.  
 <hr>
 
-- **Add Phase Features** : Click this button and specify the location with a left mouse click to insert a feature (intersection) that contains an elevation (z), type, name and order.  Available when Schedule layer is active.
+- **Add Phase Features** ![Image](/image/Add Phase Features.jpg) : Click this button and specify the location with a left mouse click to insert a feature (intersection) that contains an elevation (z), type, name and order.  Available when Schedule layer is active.
 <hr>
 
-- **Add Stockpile Features** : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin and owmax for determining the values of the Routing variable (data.ow) blocks accepted on that stockpile.  Available when Schedule layer is active.
+- **Add Stockpile Features** ![Image](/image/Add Stockpile Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin and owmax for determining the values of the Routing variable (data.ow) blocks accepted on that stockpile.  Available when Schedule layer is active.
 <hr>
 
-- **Add Leach Crush Features** : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted.  The that feature name must be leach; it must match the filler Phase Name (pn) name of each leach cell (Filler) created.  Available when Schedule layer is active.  Material mined reports here after stockpiling.
+- **Add Leach Crush Features** ![Image](/image/Add Leach Crush Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted.  The that feature name must be leach; it must match the filler Phase Name (pn) name of each leach cell (Filler) created.  Available when Schedule layer is active.  Material mined reports here after stockpiling.
 <hr>
 
-- **Add Leach ROM Features** : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted.  The that feature name must be leach; it must match the filler Phase Name (pn) name of each leach cell (Filler) created.  Available when Schedule layer is active.  Material mined reports directly here rather than via a stockpile.
+- **Add Leach ROM Features** ![Image](/image/Add Leach ROM Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted.  The that feature name must be leach; it must match the filler Phase Name (pn) name of each leach cell (Filler) created.  Available when Schedule layer is active.  Material mined reports directly here rather than via a stockpile.
 
-- **Add Point Features** : This will add point features to the active layer.  Only available when the Schedule layers are active. 
-
-<hr>
-
-- **Add Line Features** : When the Roads layer is active, this property becomes available.  This will add lines to those selected layers.  
+- **Add Point Features** ![Image](/image/Add Point Features.jpg): This will add point features to the active layer.  Only available when the Schedule layers are active. 
 
 <hr>
 
-- **Add Polygon Features** : To start drawing polygons or contour lines:
+- **Add Line Features** ![Image](/image/Add Line Features.jpg): When the Roads layer is active, this property becomes available.  This will add lines to those selected layers.  
+
+<hr>
+
+- **Add Polygon Features** ![Image](/image/Add Polygon Features.jpg): To start drawing polygons or contour lines:
 
     1. Activate the appropriate layer.
-    2. Click the **Add Polygon Features** button. 
+    2. Click the **Add Polygon Features** ![Image](/image/Add Polygon Features.jpg) button. 
     
       Only available when the Base, Cutter, Filler, BaseResult or CutterResult layers are active.  
 <hr>
@@ -629,7 +625,7 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
       2. Select the feature to be removed from the drawing screen. Deselect this button when finished.
 <hr>
 
-- **Drag features** : Drag a feature to a different location (but not elevation) in the Drawing Window.  
+- **Drag features** ![Image](/image/Drag Features.jpg): Drag a feature to a different location (but not elevation) in the Drawing Window.  
 
 <hr>
 
@@ -655,21 +651,21 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
 
 <hr>
  
-- **Split Polygon** : Pick one feature, then pick a second feature. The first feature will split the second feature.  The area of the first feature selected inside the second will be maintained. The remainder of the first feature selected can be deleted.  
+- **Split Polygon** ![Image](/image/Split Polygon.jpg): Pick one feature, then pick a second feature. The first feature will split the second feature.  The area of the first feature selected inside the second will be maintained. The remainder of the first feature selected can be deleted.  
 <hr>
 
-- **Union Two Polygons** : Pick one feature then pick another feature, these two features will join to form a new feature.  If using ramps, the start of the ramp (denoted by the red circle) will be retained for the second feature selected.  
+- **Union Two Polygons** ![Image](/image/Union two polygons.jpg): Pick one feature then pick another feature, these two features will join to form a new feature.  If using ramps, the start of the ramp (denoted by the red circle) will be retained for the second feature selected.  
 <hr>
 
-- **Set First Poly Vertex** : Moves starting location for ramp (red dot) to vertice on feature specified.  
+- **Set First Poly Vertex** ![Image](/image/Set First Poly Vertex.jpg): Moves starting location for ramp (red dot) to vertice on feature specified.  
     1. Draw the feature.
-    2. Click **Set First Poly Vertex** button from the Main Menu and click the new position for the inside vertice of the ramp to start from.
+    2. Click **Set First Poly Vertex** ![Image](/image/Set First Poly Vertex.jpg) button from the Main Menu and click the new position for the inside vertice of the ramp to start from.
     3. Click the button again to exit this function.  
 
  
 <hr>
 
-- **Properties** : Displays the table of layer or feature Properties (the layer should be active in the Layer Menu) in the Drawing Window.  To select this display box, left-click the Properties button or hit the **p** key on the keyboard.
+- **Properties** ![Image](/image/Properties.jpg): Displays the table of layer or feature Properties (the layer should be active in the Layer Menu) in the Drawing Window.  To select this display box, left-click the Properties button or hit the **p** key on the keyboard.
     
     - Click the **+** button to add parameters to the Properties table.
     - Clcik the **x** button to delete parameters from the Properties table.
@@ -894,9 +890,6 @@ To open the charts window, click **Create Charts**![Image](/image/Utility_Create
 
 To open the report window, click **Report Tool**![Image](/image/Utility_report.jpg) button in the Utility Menu.
 
-  ![Image](/image/Figure 6 9 Report Window, “report01.json” Loaded.jpg) 
-
-
   When executing a report, different browsers may display different export prompts (). Reports are generated over the Mineplan layer by specifying a grouping parameter, for example, "data.pm."
 
 
@@ -948,8 +941,6 @@ In the above example, The origin file name was “Tutorial3.2_ph1,2&Dump_all.jso
 
 If the Layer Menu indicates that a layer has several files (as shown by the bracketed number), the layer should be checked for duplicate contours at each elevation. The menu can be expanded and collapsed. The order of the layers listed in the Layer Menu can be changed by dragging each layer to the desired location.
 
-  ![Image](/image/Figure 7 2 Layer Menu.jpg)
-
 <hr>
 
 ### 4.5.3 Drag and Drop Files
@@ -958,7 +949,6 @@ The drag and drop capability enables the user to drag a Group file or a single l
 
 To drag & drop a file into a layer, first activate the layer. For example, dragging the Cutter file to the Base layer will add the Cutter file to the Base layer. To undo this, either perform a **ClearLayer** or restart the project. When a file is dragged onto an active layer that already includes data, the data from the dragged file is added to the existing data rather than being overwritten.
 
-  ![Image](/image/Figure 7 3 irma_base.json file Dragging To The Project Drawing Window.jpg)
 
  **NOTE : When dragging a Group file or a single layer file, if no layer from the Layer Menu is selected as active, the layer will be added to the corresponding layers based on the file contents in the la property. When you save, the la property is written to a file. If you don't activate a layer, you'll get the same result as if you use the Dropdown Menu method. File/Open**
 <hr>
@@ -989,9 +979,6 @@ Each defined layer has a unique geometry type:
 
 The Base layer includes the surface topography before any shapes are cut or filled. The features and shadings of the base layer are highlighted in red. The current elevation causes that contour to change to a solid feature with editable vertices. That contour is changed to a solid feature with editable vertices as the elevation changes.
 
-
-  ![Image](/image/Figure 7 6 Layer Options, Base Layer Tools.jpg)
-
   ![Image](/image/Figure 7 5 Base layer Red Coloring.jpg)
 
 
@@ -1001,8 +988,6 @@ Importing a DXF file is a common method of creating base layers.
 #### Geotech Layer
 
 The features of the Geotech layer are blue with grey shading. These features do not change appearance with elevation changes.
-
-  ![Image](/image/Figure 7 7 Geotech Layer Coloring.jpg)
 
 To add Geotech:
 
@@ -1031,9 +1016,6 @@ The current elevation displayed in the Message bar causes the Cutter contour to 
 
 The first Cutter layer features are dark blue, with lighter blue shading. Each cutter layer is colored by default, however the colors can be customized using the Cutter Color option. By default, the first Cutter is royal blue, the second is red, the third is fuchsia, etc.
 
-  ![Image](/image/Figure 7 11 Cutter Layer Coloring & Contours-Points On Current Elevation, Base Layer Loaded (Pink).jpg)
-
-
 The Cutter layer number is incremented as **Cutters** and **Fillers** are added, and is recorded in the cut fill num property. By dragging files onto active Cutter or Filler layers, you can work around these assigned **Cutter** and **Filler** layer numbers. For example, to assign an exported JSON file from the **Cutter6** layer to the **Cutter3** layer, activate the **Cutter3** layer in the Layer Menu and drag the exported **Cutter6** JSON export file into the Drawing Window. Then, using the Dropdown Menu File/Clear Layer, delete the contents of the **Cutter6** layer.
 
   ![Image](/image/Figure 7 12 Layer Options, Cutter Layer.jpg)
@@ -1055,8 +1037,6 @@ If a DXF file is to be imported into a **Cutter** layer, it must b
 Filler layers are used for constructing dumps and leach pads. As with Cutters, if there is data on the elevation in the **Filler** layer, the current elevation displayed in the Message bar causes that contour to change to a solid feature with editable vertices and internal shading.
 
 The **Filler** layer numbers (cut fill num) are assigned automatically based on the number of existing Cutter and Filler layers and order of creation.
-
-  ![Image](/image/Figure 7 15 Layer Options, Filler Layer.jpg)
 
 - Each **Filler** layer can have a unique **Phase Name (pn)**, for example, leach01 and dump5. When you press Cut Contour with Cutter/Filler (section 10.5), the **Phase Name (pn)** is written on the layer and the **CutterResult** layer. This means that until the button **Cut Contour with Cutter/Filler** is pressed, the **Phase Name (pn)** will not be visible as a Label display for the Filler in the Drawing Window.
 
@@ -1095,9 +1075,6 @@ BaseResult layer features are orange, with lighter orange shading.  The current 
 #### CutterResult Layer
 
 CutterResult layer features are lime colored.
-
- ![Image](/image/Figure 7 21 CutterResult Layer Cut Coloring.jpg)
-
 
 The shape shown in the **CutterResult** layer is the result cut polygon representing the material cut (mined) or filled (dumped).  This layer is populated by using the Cut Contour with **Cutter/Filler** operation.  This information is also used in the **Volumetric/Summary** function of the **Dropdown Menu**.
 
