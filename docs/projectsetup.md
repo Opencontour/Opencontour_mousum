@@ -133,7 +133,7 @@ JSON files can be exported in two different ways.
 
 Individual file types contain one layer, while group files contain numerous layers. Individual layers are defined as those options in Table XX that do not end in the word "Group." Using group files eliminates the need to drag and drop individual layers into a project. The **la** attribute is used to populate the layers.
 
-Each project's layers must be re-added upon opening. It is recommended to export any fresh work from your project prior to closing. For additional information on save/export, refer to XXXX.
+Each project's layers must be re-added upon opening. It is recommended to export any fresh work from your project prior to closing. For additional information on save/export, refer to [Buttons](MineDesignCoreModule.md#431-buttons).
 
 ![Image](/image/Supported_File_Type.jpg)
 
@@ -151,17 +151,17 @@ At any point, you can close the active project by reloading the browser from the
 
 The standard procedure for completing an Opencontour open pit project is as follows:
 
-1. In the Base layer, load a contour file containing the topography of the project. Additionally, load the Model and Geotech layers. See Section XXXX of the Help Guide for more information.
-2.	Create a Cutter pit shape guided by a loaded Model, Refer to section XXXX for more details.
-3.	Build any dumps or leach pad cells. Refer to section XXXX for more details.
-4.	The Cutter is used to cut the contours. This creates CutterResult & BaseResult layers. Refer to section XXXX for more details.
-5.	Check the Density, ow property (ow) & Ore Tns variable and verify the Routing variable. Density values in the Model layer should be expressed in tns/volume. Refer to XXXX  for more details.
-6.	Create the Mineplan by utilising the loaded Model and CutterResult. Refer to section XXXX for more details.
-7.	Insert Schedule Features, such as hauling, loading, stockpiles, leach cells & dumps.  Use the Schedule Features portion of the window as in Figure XXXX. Drag these to their desired locations and adjust the elevation. Refer to section XXXX for more details.
-8.	Build Roads from the mining activity to the applicable Schedule Features, Refer to section XXXX for more details.  Or, select the Roads option None to run the schedule without using roads. Refer to section XXXX for more details.
-9.	Create a Schedule for mining & processing tonnages on a period by period basis, Refer to section XXXX for more details.
-10.	Run the schedule. Refer to section XXXX for more details.
-11.	Run associated schedule scripts. Refer to section XXXX for more details.
-12.	View Charts. Refer to section XXXX for more details.
-13.	Run Reports. Refer to section XXXX for more details.
-14.	Build Period Maps. Refer to section XXXX for more details.
+1. In the Base layer, load a contour file containing the topography of the project. Additionally, load the Model and Geotech layers. See [layer](MineDesignCoreModule.md#455-layers) for more information. 
+2.	Create a Cutter pit shape guided by a loaded Model.
+3.	Build any dumps or leach pad cells.
+4.	The Cutter is used to cut the contours. This creates CutterResult & BaseResult layers. See [Layer](MineDesignCoreModule.md#455-layers) for more information.
+5.	Check the Density, ow property (ow) & Ore Tns variable and verify the Routing variable. Density values in the Model layer should be expressed in tns/volume. See [Layer](MineDesignCoreModule.md#455-layers) for more information.
+6.	Create the Mineplan by utilising the loaded Model and CutterResult. See [Layer](MineDesignCoreModule.md#455-layers) for more information.
+7.	Insert Schedule Features, such as hauling, loading, stockpiles, leach cells & dumps.  Use the Schedule Features portion of the window. Drag these to their desired locations and adjust the elevation. See [Layer](MineDesignCoreModule.md#455-layers) for more information.
+8.	Build Roads from the mining activity to the applicable Schedule Features or, select the Roads option None to run the schedule without using roads. See [Create Schedule](MineDesignCoreModule.md#443-create-schedule) for more information.
+9.	Create a Schedule for mining & processing tonnages on a period by period basis. See [Create Schedule](MineDesignCoreModule.md#443-create-schedule) for more information.
+10.	Run the schedule. See [Create Schedule](MineDesignCoreModule.md#443-create-schedule) for more information.
+11.	Run associated schedule scripts. See [Create Script](MineDesignCoreModule.md#444-create-script) for more information.
+12.	View Charts. See [Create Charts](MineDesignCoreModule.md#445-create-charts) for more information.
+13.	Run Reports. See [Report Tool](MineDesignCoreModule.md#446-report-tool) for more information.
+14.	Build Period Maps.
