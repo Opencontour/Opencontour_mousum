@@ -139,9 +139,7 @@ Each project's layers must be re-added upon opening. It is recommended to export
 
 ### Reload Project
 
-At any point, you can close the active project by reloading the browser from the top browser address bar. To close the active project, click **reload** button. A confirmation message is displayed
-
-![Image](/image/reload.jpg)
+At any point, you can close the active project by reloading the browser from the top browser address bar. To close the active project, click **reload** button.
 
 ### Basic Mine Plan Workflow
 

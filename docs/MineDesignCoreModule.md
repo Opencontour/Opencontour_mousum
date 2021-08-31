@@ -290,7 +290,7 @@ The data represents a summary of the attributes of the features in the CutterRes
 
 **Summary By**
 
-These summaries are used to query pit volumes, design dumps, and construct leach pads. t is applied to any shapes that are present in the CutterResult layer. The mass data is independent of the Mineplan
+These summaries are used to query pit volumes, design dumps, and construct leach pads. It is applied to any shapes that are present in the CutterResult layer. The mass data is independent of the Mineplan
 
 The **Summary By** provides three options to filter:
 
@@ -422,8 +422,6 @@ This option enables you to copy all features from one layer to another. To copy 
 
 The **Reorder Fillers** option in the Dropdown Menu can be used to reorder filler layers that were built out of order for a particular project.
 
-   ![Image](/image/Figure 4 44 Dropdown Menu, Design Options.jpg)
-
 To reorder the filler layer, follow the below steps:
 
 1. Click **Design > Reorder Fillers**. Reorder Filler Layers window will appear, listing all the Filler layers in the project along with their original cut fill number.
@@ -450,7 +448,7 @@ To reorder the filler layer, follow the below steps:
 
 ### 4.2.5 Help 
 
-To access the help documentation, visit help.opencontourXXXX.com 
+To access the help documentation, click the help Tab and select Help Guide. 
 
   ![Image](/image/Figure 4 76 Dropdown Menu, Help Options.jpg)
 
@@ -538,10 +536,7 @@ Select the layer from the **Layer Menu** to display the hidden buttons.
     3. Click the Display Vertice Number button ![Image](/image/Display Vertice Number.jpg). Each vertice on the selected contour will be assigned a sequential number, making it easier to spot kinks, etc., where the numbers overlap.
 
     ![Image](/image/Figure 5 7 Numbered Vertices.jpg)
-     
-
-
- activate the Cutter or Filler Layer from the Layer Menu.  Each vertice will be assigned a sequential number; making it easier to spot kinks, etc.  
+      
 <hr>
 
 - **Add Toe Crest**![Image](/image/Add Toe Crest.jpg): Opencontour can add toe and crest lines for projects that require extra detail. To add these lines at the appropriate elevations  (0.5 x BenchHeight):
