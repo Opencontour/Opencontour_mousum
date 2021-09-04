@@ -1,11 +1,10 @@
 
-# Chapter 6 Opencontour Heap Leach Stacking
+# Chapter 5 Opencontour Heap Leach Stacking
 
 What you will learn:
 
 - [Overview](#overview)
-- [Stacking Menu](#stacking-menu)
-- [Utility Menu](#utility-menu)
+- [Stacking Menu (Utility Menu)](#stacking-menu)
 
 
 
@@ -14,20 +13,19 @@ What you will learn:
 
 
 
-## Stacking Menu  
+## Utility Menu > Stacking Menu
 
-Pressing the Utility Menu’s **Stacking** button will launch the Leach Stacking module.  This is used to assign leach panel properties to the CutterResult, Model, and Mineplan layers. Leach pads were ﬁrst designed as filler layers. These may be separated into vertical lifts. The Cut Contour with Cutter/Filler function is run to get the CutterResult shapes of material to be stacked. 
+Pressing the Utility Menu’s **Stacking** button will launch the Leach Stacking module.  This is used to assign leach panel properties to the CutterResult, Model, and Mineplan layers.     Leach pads are ﬁrst designed as filler layers. These may be separated into vertical lifts. The **Cut Contour with Cutter/Filler** function is run to get the CutterResult shapes of material to be stacked.  
 
 
 The following steps are then followed:
 
-1. Load or build the Grid, stored in the Model layer (needs to be completed once for the project) 
-
+1.	Load or build the Grid, stored in the Model layer (needs to be completed once for the project) 
 2.	Break up, or Discretize the CutterResult shapes into shapes using a grid
 
 3.	Import the Mineplan 
 
-4.	Use the Populate Mineplan function to populate the CutterResult shapes with a timestamp (pm) and Mineplan property information, including grades.
+4.	Use the **Populate Mineplan** function to populate the CutterResult shapes with a timestamp (pm) and Mineplan property information, including grades.
 
 To learn more about the Leach Stacking Module Guide & Procedures documentation, click on the **?** button to the right of  the text Leach Stacking at the top of the window.
 
@@ -54,10 +52,6 @@ The Leach Stacking module window provides several conﬁguration tab options:
 
 The Home tab displays a status indicator light for completed process stages.
 
-**Progress Indicator Lights Color Status**
-
-![Image](/image/Progress Indicator Lights Color Status.jpg)
-
 
 
 - Grid
@@ -68,6 +62,8 @@ The Home tab displays a status indicator light for completed process stages.
 
 - Populate Mineplan 
 
+**Progress Indicator Lights Color Status**
+![Image](/image/Progress Indicator Lights Color Status.jpg)
 
 
 <hr>
@@ -85,10 +81,12 @@ The Grid is built into the Grid tab of the Leach Stacking module.  This process 
 The Discretize button separates the CutterResult shapes using the Model layer's grid and adds the block panel properties for each panel to the CutterResult layer.
 
 
-1.	Using the **For Model** checkbox populates properties for full blocks that have their centroid in the CutterResult shape only.
+1.	The **Discretize** button separates the CutterResult shapes using the Model layer's grid and adds the block panel properties for each panel to the CutterResult layer. Using the ‘For Model’ checkbox populates properties for full blocks that have their centroid in the CutterResult shape only.
+
+    ![Image](/image/Discretize Button.jpg)
 
 
-2. After the Discretize process is complete, a confirmation message will appear, indicating the quantity of new blocks created. Select the **OK** option. If no blocks were created, the Discretize function failed. In that instance, the  Model layer should be checked in the **Drawing Window** to ensure it encompasses the entire CutterResult shapes (including elevation and spatially). The function should be re-run after this check. 
+2. After the Discretize process is complete, a conﬁrmation message will appear, indicating the quantity of new blocks created. Select the **OK** option. If no blocks were created the Discretize function failed. In that instance the Model layer should be checked in the Drawing Window to ensure it encompasses the entire CutterResult shapes (including elevation and spatially). The function should be re-run after this check.
 
   ![Image](/image/Figure 4 53 Confimation After Discretize Function Is Run.jpg)
 
@@ -194,12 +192,12 @@ These entries can be overwritten in the Grid tab.  A further description of each
 
 ###### Z Origin
 
-The origin specified here should be the lowest elevation of your leach pad. The **Volumetric/Summary By Bench** option in the **Dropdown Menu** will display the lowest elevation of the shape. This elevation should be entered as the Z Origin.
+The origin specified here should be the lowest elevation of your leach pad. The **Volumetric/Summary By Bench** option in the Dropdown Menu will display the lowest elevation of the shape. This elevation should be entered as the Z Origin.
 
 
 ###### Lift Height
 
-The BenchHeight parameter in the **Project Settings** will determine the lift height. This can be changed by overwriting the value in the **Grid tab**.
+The BenchHeight parameter in the Project Settings will determine the lift height. This can be changed by overwriting the value in the Grid tab.
 
 
 ######	X & Y Direction
@@ -239,9 +237,9 @@ If the **Fix** box is ticked, the origin entries will be maintained in the **Pre
 ###### Preview Button & Fix checkbox
 
 
-The **Preview** button enables the user to view the defined grid's boundaries relative to the CutterResult position of the designed leach pad. The CutterResult should be displayed in the **Drawing Window** ﬁrst, but it is usually displayed with **All Contours** to ensure the entire CutterResult layer is captured.  Once all contours are displayed for the CutterResult, go back to the **Grid tab** and click the **Preview** button.  The **Grid tab** will disappear from the display but can be accessed again.
+The **Preview** button enables the user to view the defined grid's boundaries relative to the CutterResult position of the designed leach pad. The CutterResult should be displayed in the Drawing Window ﬁrst, but it is usually displayed with **All Contours** to ensure the entire CutterResult layer is captured.  Once all contours are displayed for the CutterResult, go back to the Grid tab and click the **Preview** button.  The Grid tab will disappear from the display but can be accessed again.
 
-If the Fix checkbox is ticked, the origin of the displayed Preview will be as specified in the **Grid tab**. You can reposition the Grid in the Drawing Window by deselecting the Fix checkbox.
+If the **Fix** checkbox is ticked, the origin of the displayed Preview will be as specified in the Grid tab. You can reposition the Grid in the Drawing Window by deselecting the Fix checkbox.
 
 
 Once the grid is positioned correctly and the left mouse button is pressed, the Grid tab's coordinates will update to reﬂect the new **X Origin** and **Y Origin**.  The X and Y Number of Panels, and X and Y Panel Size entries will remain unchanged.
@@ -264,9 +262,9 @@ Click the **Save** button to save the Grid tab entries to the project. The entri
 
 ######	Build Button
 
-When the **Build** button is clicked, this grid dataset will be used to represent the leach stacking model, which will be written to the Model layer. When the Drawing Window is refreshed and the Model layer is selected in the Layer Menu, grid squares are displayed. Each leach elevation will display a grid. The grid can be saved as a layer (JSON ﬁle) and reused by dragging it into a project. It will be saved as part of a group ﬁle All (Model).
+This grid dataset will be used to represent the leach stacking model, which will be written to the Model layer when the **Build** button is pressed. The Drawing Window will display grid squares when it is refreshed and the Model layer is ticked on in the Layer Menu. Each leach elevation will display the a grid. The grid can be saved as a layer (JSON ﬁle) and reused by dragging into a project. It will be saved as part of a group ﬁle All (Model).
 
-The properties written to the Model layer during the Build function are written in the following table, and they are common to all elevations:
+Properties written to the Model layer during the **Build** function are written in the following table, common to all elevations:
 
 
 ![Image](/image/Build function.jpg)
@@ -308,9 +306,9 @@ Polygon shapes can be built around the discretized CutterResult shapes using the
 
 Next, follow the below steps:
 
-1. Assign a cycle in the **Layer Menu** for the new polygon (Primary, Secondary, Tertiary or Quaternary, Drainage Zone or Infrastructure).
+1. Assign a cycle in the Layer Menu for the new polygon (Primary, Secondary, Tertiary or Quaternary, Drainage Zone or Infrastructure).
 
-2. Choose a Solution Color in the **Layer Menu** for the shape drawn.
+2. Choose a Solution Color in the Layer Menu for the shape drawn.
 
 3. On completion of drawing the shape, double-click and the Properties window will appear.  A description of these properties is shown in the table below.
 
@@ -324,7 +322,7 @@ Next, follow the below steps:
 
 #### Update Solution Layer Properties
 
-The **Update Solution** function can be used to populate solution layer properties that do not already have the properties of application rate (app rate, gpm/ft2 or L/m2/hr) and Leach time (lt, days).  The **Update Solution** function uses the Solution layer to populate the CutterResult and Mineplan layer’s ‘on’ and ‘lt’ properties with a value for each record centroid contained within the **Solution** layer polygon. This is accessed from **Utility Menu > Stacking > Solution**. The CutterResult layer will have the ‘app_rate’ property written on it.
+Solution layer features that do not already have the properties application rate (app_rate, gpm/ft2 or L/m2/hr) and Leach time (lt, days) populated can be added using the Update Solution function.  This is accessed from **Utility Menu > Stacking > Solution**.  The **Update Solution** function will use the Solution layer to populate the CutterResult and Mineplan layer’s ‘on’ and ‘lt’ properties with a value for each record centroid contained within the **Solution** layer polygon.  The CutterResult layer will have the ‘app_rate’ property written to it.
 
 
 **NOTE: The polygon must be drawn above the CutterResult's elevation.**
@@ -336,33 +334,31 @@ The **Update Solution** function can be used to populate solution layer properti
 
 When starting a stacking project in Opencontour, there are specific steps to follow.  A suggested folder structure is shown below.
 
-![Image](/image/Stacking_folder-structure.jpg)
-
 There are two categories of stacking:
 
 - **Historical Stacking** – It includes all material currently placed on the pad.  The site will have surveyed as build DXF files to outline the stacking areas.
 
 - **Forecast Stacking** – Stacking future material, building on the Historical Stacking surface.  
 
+![Image](/image/Stacking_folder-structure.jpg)
 
 #### Historical Stacking
 
 **Step 1 - Base** 
 
-To start the process of creating the Historical stacking project, the starting topography, or Base, must be created from ‘as build’ surfaces, which is often accomplished by importing supplied DXF into the Base layer. For future use, the final Base layer should be exported and clearly named, e.g. Date MasterTopo base.json. 
+To create the Historical stacking project the starting topography, or Base, must first be created from ‘as build’ surfaces, usually by importing supplied DXF’s into the Base layer.  The final Base layer should be exported and clearly named for future use, e.g. Date_MasterTopo_base.json. 
 
-The project extents, MidBench and BenchHeight, and site density need to be considered and checked/saved in the **Project Settings** during Base creation.  The Base layer usually represents the liner topography.
+During Base creation, the project extents, MidBench and BenchHeight and site density need to be considered and checked/saved in the Project Settings.  The Base layer usually represents the liner topography.
 
 **Step 2 - Lifts** 
 
 The lifts of each stage in the historical stacking are bounded by supplied ‘as build’ surfaces (DXF’s).  The DXF’s should be logically named, e.g., Stage1Lift1, or Stage3Lift2.  The Import layer can be used to contain the imported DXF’s and the fillers can be drawn in their respective stacking order, guided by the Import layer contents.
 
-The lifts can be composed of several fillers.  The shapes of the fillers depend on the stacking method used, i.e., truck or radial stackers.  After constructing the first lift in Opencontour, it is recommended that the user Cut Contours with a Cutter/Filler.
-
+The lifts can be composed of several fillers.  The shapes of the fillers depend on the stacking method used, i.e., truck or radial stackers.  After the first lift is constructed in Opencontour it is advised that the user **Cut Contours with Cutter/Filler**.  
 
 **Step 3 - Grid** 
 
-The grid, as described in the Grid Tab, is stored in the Model layer in Opencontour.  It will be used for each historical stacking project.  The next step is to Discretize, as described in the color button reference of the Leach Stacking Module.
+The grid, as described in the Grid Tab, is stored in the Model layer in Opencontour.  It will be used for each historical stacking project.  The next step is to **Discretize**, as described in the color button reference of the Leach Stacking Module.
 
 A good place to store the Grid file is under the ‘Working’, because it is used in both Historical and Forecast stacking projects.
 
@@ -371,20 +367,21 @@ A good place to store the Grid file is under the ‘Working’, because it is us
 
 Once the CSV file is created, it is imported into the Mineplan layer and the **Populate Mineplan** function from the Leach Stacking Module can be run.
 
-After running **Populate Mineplan**, the CutterResult layer should be exported and given a descriptive name, for example, LP30 EOM YearMonth CR.json. This should be saved in the folder '05 CutterResults'. Save the entire project file in the folder '04 Historical Stacking' as an'All (Model)' type.
+After running the **Populate Mineplan** function the CutterResult layer should be exported and clearly named, e.g., LP30_EOM_YearMonth_CR.json.  Save this in the folder ‘05_CutterResults’.
 
+Store the entire project file, saved as an’All (Model)’ type in the folder ’04 Historical Stacking’.
 
 **Step 5 - Final Historical Stacking Project**
 
-To combine each stage and lift into a single project, a new project must be created.  Drag in the original Base created for example, Date_MasterTopo_base.json. Drag the CutterResult files for each lift and stage from the ‘05_CutterResults’ folder.
+To combine each stage and lift into a single project a new project must be opened.  Drag in the original Base created, e.g. Date_MasterTopo_base.json.  Now drag in the CutterResult files for each lift and stage from the ‘05_CutterResults’ folder.
 
-Using the project's CutterResult layer, subsequent historical stacking can be added to this project. A Solution layer should be added to this project.  
+Subsequent historical stacking can be added to this project, using the project’s CutterResult layer. A Solution layer should be added to this project.  
+ 
 
 
 **Step 6 - 3D Visualization**
 
-In the **Display>3D>New Timeline**, an animation of the stacking project can be viewed with shading and labelling based on the properties in the CutterResult layer. The fillers should be stacked in their respective orders.
-
+An animation of the stacking project can be viewed in the **Display>3D>New Timeline** with shading and labelling from the properties in the CutterResult layer.  The fillers should be stacked in their respective orders.
 
 #### Forecast Stacking
 
@@ -397,17 +394,17 @@ In a new project for the forecast stacking, use the most recent export of the Ba
 
 **Step 2 - Lifts** 
 
-Forecast stacking stages are defined by designed surfaces (DXFs), and the approach is identical to that detailed above in the Historical Stacking section.
+The lifts of each stage in the forecast stacking are bounded by designed surfaces (DXF’s) and the procedure is like the process described above in the Historical Stacking section.  
 
 
-**Step 2 - Grid** 
+**Step 3 - Grid** 
 
-To discretize the designed fillers, drag the previously constructed grid, e.g. 'ProjectName 100x100 model.json', into the model layer.
+The previously constructed grid, e.g. ‘ProjectName_100x100_model.json’ can be dragged in to the model layer to discretize the designed fillers.
 
 
 **Step 4 - Mineplan**
 
-A CSV can be built using the forecast Mineplan data, using the properties previously described.  The Populate Mineplan function is run, with no adjustments in the filler densities.  
+A CSV can be built using the forecast Mineplan data, using the properties previously described.  The **Populate Mineplan** function is run, with no adjustments in the filler densities.  
 
 **Step 5 - 3D Visualization**
 
@@ -415,4 +412,4 @@ A CSV can be built using the forecast Mineplan data, using the properties previo
 An animation of the stacking project should be checked in the **Display>3D>New Timeline**.
 
 
-**NOTE:** **If the project contains many fillers, it can be divided into multiple projects. In this case, the Opencontour project files created for each should be titled logically. Scripts and Reports can be run on the CutterResult layer to obtain information about previously stacked and leached material, as well as forecast stacking.**
+**NOTE:** **If there are many fillers in the project it can be broken up into multiple projects.  In this case, the created Opencontour project files for each should be logically named. Scripts and Reports can be run over the CutterResult layer to provide data on previously stacked and leached material, as well as forecast stacking.**

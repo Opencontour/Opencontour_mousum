@@ -8,7 +8,6 @@ What you will learn:
 - [Main Menu](#43-main-menu)
 - [Utility Menu](#44-utility-menu)
 - [Layer Menu](#45-layer-menu)
-- [Screen Menu](#46-screen-menu)
 - [Message Bar](#47-message-bar)
 
 
@@ -22,7 +21,7 @@ What you will learn:
 ## 4.1 Overview
 
 
-The Project window is used to create and manipulate various Opencontour projects using various elements, such as panels, bars, windows, etc. After finalizing the **Project Settings**, the new project will be created. The project's name and version number are displayed in the upper right-hand corner of the **Project Window**.
+The Project window is used to create and manipulate Opencontour projects using various elements, such as panels, bars, windows, etc. After finalizing the **Project Settings**, the new project will be created. The project's name and version number are displayed in the upper right-hand corner of the **Project Window**.
 
 ![Image](/image/proejct_window_dashboard.jpg)
 
@@ -33,27 +32,30 @@ In the project window, you can access the following menus:
 - Drawing Window
 - Utility Menu
 - Layer Menu
+- View Settings
 - Message bar
 
-**Dropdown Menu:** A Dropdown Menu is located below the browser address bar. This menu is used to save and open files, configure display parameters, access design features, and access the Help Guide directly. Refer to section [Dropdown Menu](#dropdown-menu) for more details.
+**Dropdown Menu:** A Dropdown Menu is located below the browser address bar. This menu is used to save and open ﬁles, conﬁgure display parameters, access design features and 3D tools.  There are also links to access the Help Guide directly. Refer to section [Dropdown Menu](#dropdown-menu) for more details.
 
-**Main Menu:** When a project is opened, the Main Menu appears at the top of the display window. A project can be built using the layer drawing and editing tools available in this menu and running functions.
+**Main Menu:** When a project is opened, the green Main Menu button appear at the top of the display window. A project can be built using the layer drawing and editing tools available in this menu and running functions.
 
-**Drawing Window:** When a project is open, the Drawing Window is the top area of the display window and the location of the CAD design work. When a project is opened, this section is initially empty until layers are added.
+**Drawing Window:** When a project is open, the Drawing Window is the central area of the display window and the location of the CAD design work. When a project is opened, this section is initially empty until layers are added.
 
-**Utility Menu:** The Utility Menu enables users to make changes to **Project Settings**, **Project Properties**, **Scheduling**, **Scripts**, **Charts**, and **Reports**. These topics are described throughout this document in the order in which they occur procedurally.
+**Utility Menu:** The Utility Menu enables users to make changes to **Project Settings**, **Project Properties**, **Scheduling**, **Scripts**, **Charts**,**Reports**,**Leach Model** and **Stacking**. These topics are described throughout this document in the order in which they occur procedurally.
 
 **Layer Menu:** The Layer Menu is used to edit individual layers.
 
 **Message bar:** The message bar is used to convey information such as coordinates, elevations, strike angles, wall angles, and distances to the user.
 
-**Additional Option:**
+**View Settings:** The View Settings portion is used to control what and how much information is displayed in the Drawing Window.  Other uses include how contour projections are made.
 
-- **Zoom in:** Press **+** button to zoom in. This has the same effect as turning the mouse wheel.
+**Additional View Option:**
 
-- **Zoom out:** Press **-** button to zoom out. This has the same effect as turning the mouse wheel.
+- **Zoom in:** Click the green **+** button to zoom in. This has the same effect as turning the mouse wheel.
 
-- **Zoom bar:** This bar allows you to zoom in and out by sliding it up and down.
+- **Zoom out:** Click the green **-** button to zoom out. This has the same effect as turning the mouse wheel.
+
+- **Zoom bar:** This green bar allows you to zoom in and out by sliding it up and down.
 
   ![Image](/image/Additional_option.jpg)
 
@@ -63,45 +65,49 @@ In the project window, you can access the following menus:
 
 **Panning**
 
-The user is also able to pan, by holding down the left mouse key in the **Drawing Window** and dragging it to a new location. Panning can also be used to view the entire contents of the Properties display window while viewing a feature's properties.
+The user is also able to pan, by holding down the left mouse key in the Drawing Window and dragging it to a new location. Panning can also be used to view the entire contents of the Properties display window while viewing a feature's properties.
 
 **Schedule Fill Down in the Schedule Window**
 
 To fill the remining schedule periods with a value, type the value in a blank entry box (for either the **Mine Constraint** or **Process Limit**). Select the value, right-click and choose either Copy Up or Copy Down.
 
-**Rotate View**
 
-Holding down the **Alt** + **Shift** keys on the keyboard and panning with the mouse will rotate the view displayed in the **Drawing Window**. 
+**Mouse Right-click Options For Selected Feature(s)**
 
-**Copy a Selected Feature in the Drawing Window**
+Use the **Choose Feature** or **Select Features with a Box** Main Menu button to select either a single feature, or several, in the active layer. Right-click the mouse in the Drawing Window to bring up the options permitted. These are:
 
-Use the **Select Feature** button to select a single feature in the active layer. Right-click in the **Drawing Window** to copy. You can also copy an entire layer by selecting the **Design > Copy All To** Dropdown Menu,
+- Copy 
+
+- Remove
+
+- Hide/Unhide 
+
+
+**Copy**
 
 Features may be copied from an active layer to inactive layer. To copy from an active layer to an inactive layer, follow the steps mentioned below.
 
-1.	Activate the layer you wish to copy a feature from.
+1.	Activate the layer you wish to copy a feature from. To activate a layer, simply click on the layer writing in the Layer Menu.
 
-2.	Use the **Select Feature** button, to select the item. The selected item will change to a light green color.
+2.	Use the **Choose Feature** or **Select Features with a Box** button, to select the item. The selected item will change to a light green color.
 
 3.	Right-click the mouse and select a layer from the dropdown. The layers listed will contain all available layers in the current project. The selected item will be copied to the selected layer, at the same elevation as in the originating layer. 
+
+4. 	Verify that the copy procedure worked properly by unchecking the originating layer of the feature and turning on and activating the destination layer.
 
     **NOTE:**
 
     - **If a layer (for example, Filler5) does not appear, you must first add the Filler layer.**
-    - **The Mineplan and Schedule layers can not be copied.**
-
-&nbsp;
-4. Verify that the copy procedure worked properly by unchecking the originating layer of the feature and turning on and activating the destination layer.
+    - **Only Cutter and Filler layers can be copied.**
 
 
-**Remove A Selected Feature in The Drawing Window**
 
-An active layer's features may be removed. Use the **Select Feature** button to select a feature, then right-click. A **Remove** option will appear in the Drawing Window.
+An active layer's features may be removed. Use the **Choose Feature** or **Select Features with a Box** button to select a feature, then right-click. A **Remove** option will appear in the Drawing Window.
 
 The available options are:
 
-- **Current** – removes the currently selected contour.
-- **All** – removes all contours in the layer.
+- **Current** – removes the selected contour only.
+- **All** – removes every contours in the layer.
 - **Above** – removes all contours in the layer vertically above the currently selected contour.
 - **Below** – removes all contours in the layer vertically below the currently selected contour.
 
@@ -109,9 +115,18 @@ The available options are:
 
 <hr style="height:2px;border-width:0;color:gray;background-color:grey">
 
+**Hide / Unhide**
+
+The available options are:
+
+- **Hide Selected** – conceals display of the currently selected feature. 
+- **Unhide All** –displays all features in the layer.
+
+
+
 ## 4.2 Dropdown Menu
 
-A Dropdown Menu is located below the browser address bar. This menu is used to save and open files, configure display parameters, access design features, and access the Help Guide directly. 
+A Dropdown Menu is located below the browser address bar. This menu is used to open, import, and save ﬁles.  PDF’s can also be written.  Here you can conﬁgure grid display parameters, access design features, view volumetric summaries and open the 3D visualization tools.  There are Help Guide direct access links and Leach Modelling options. 
 
   ![Image](/image/drop_down1.jpg)
 
@@ -119,19 +134,17 @@ A Dropdown Menu is located below the browser address bar. This menu is used to s
 
 ### 4.2.1 Project
 
-The Project option is located in the top-left corner of the screen in the Dropdown Menu. Click on the term **Project**. The extended Dashboard will appear.
+The Project option is in the top-left corner of the screen in the Dropdown Menu. Click on the term **Project**. The extended Dashboard will appear.
 
   ![Image](/image/project_dashboard.jpg)
 
 The dashboard displays:
 
-- A list of current projects. Click the **New Project** button to initiate a new project. Additionally, you can reopen a previous project by clicking the project name given underneath the **New Project** option.
+- A list of current projects. Click the **New Project** button to initiate a new project. Additionally, you can reopen a previous project by clicking the project name listed underneath the **New Project** option, for example, Mine X.
 
-- **UserName** at the top of the window.
-
-- Version release information is located in the top-right corner of this screen (date of last software update).  
-
-- **Logout** (press either of the Logout words).  You can change users by going back to the login credentials screen.  
+- Your **UserName** is displayed at the top of the window. To the right of the UserName is an x when the Dashboard is expanded.  Press this x to collapse the Dashboard display.
+ 
+- **Logout** (press the Logout words).  You can change users by going back to the login credentials screen.  
 <hr>
 
 ### 4.2.2 File
@@ -143,26 +156,26 @@ The file menu is used to handle files and project activities. Click on the term 
 
 ##### File > Open Project Tab
 
-This option will launch a new browser tab pre-loaded with Opencontour. The page will serve as a welcome page for selecting or creating projects.
+This option will launch a new browser tab pre-loaded with the Opencontour dashboard. If the session is current, logging back in will not be necessary.  If 2 hours have passed, login information will be required.
 
 ##### File > Clear Project
 
-When selected, the current project will be closed and all layers in the **Layer Menu** will be cleared. The same project will remain open, with no layers loaded.
+When selected, the current project files will be cleared. All layers in the **Layer Menu** will not contain data. The same project file will remain open, with no layers loaded.
 
 
 ##### File > Open
 
-This option inserts a layer into a project and assigns it to the provided location in the file. Click **Open** from the file menu and select the file. This option can be used in place of the **drag and drop** feature in the Dropdown Menu. The file location is specified by the **la** property in the JSON file when it is stored.
+ Click **Open** from the file menu and select the JSON file. This option can be used in place of the **drag and drop** feature in the Dropdown Menu. The file location is specified by the **la** property in the JSON file when it is stored, so activation of a layer will not be necessary.
 
 
 ##### File > Save Layer
 
 A layer can be exported from Opencontour as a JSON file once it is created and active in the **Layer Menu**. 
 
-  1. From the Layer Menu, select the desired layer. 
+  1. From the Layer Menu, activate the desired layer. 
   2. Click **File > Save Layer**.
 
-    Depending on the active layer, the file name will automatically include the layer's default extension.
+    Depending on the active layer, the file name will automatically include the layer's default extension, e.g. “pit1_cutter.json”.  The “pit1” component of the name should be overwritten to something meaningful.
 
 ##### File > Clear Layer
 
@@ -170,18 +183,19 @@ To clear an activated layer, select the **Clear Layer** from the dropdown.
 
 ##### File > Save Group
 
-The Save Group will display the four available group file options. 
+The Save Group will display the available options:
 
-- All (Model)
-- All (most commonly used)
-- Contour Group
+- All (Model) – saves all layers, including the Model layer.  
+- All - saves all layers, excluding the Model layer.  
+- Contour Group - – saves all Cutter and Filler layers, Base, Geotech, BaseResult, CutterResult and Import layers – saves the BaseResult, CutterResult, Mineplan, Schedule, Roads and Import layers
 - Mineplan Group
+- MP/CR – saves the Base, BaseResult, and CutterResult layers
 
-  Saving the group file will save the inputs in the [Leach/Stacking](#leach) Module, Grid tab, the Legend, Grid Settings and Charts. 
+  Saving a group file will save the inputs in the [Stacking](#leach) Module's, Grid tab, Legends, and Charts. 
 
 ##### File > Save DXF
 
-From the Layer Menu, select the desired layer and click **Save DXF**. The following layers can be saved as DXF files:
+From the Layer Menu, activate the desired layer and click **Save DXF**. The following layers can be saved as DXF files:
 
   - Base
   - Geotech
@@ -196,69 +210,80 @@ From the Layer Menu, select the desired layer and click **Save DXF**. The follow
 To import a DXF file, 
 
 1. Select the **Import DXF** option from the dropdown. A popup window will appear.
-
-  ![Image](/image/import_dxf.jpg)
-
-&nbsp;
-2. Click **DXF Layers**.  The DXF's layers will be listed. 
+2. Click the **DXF Layers**.  The DXF's layers will be listed. 
 
   ![Image](/image/DFX_layaer_list.jpg)
 
 &nbsp;
-3. Select the layer. DXF files may be imported into one of five Opencontour layers; Import, Base, Geotech, Cutters, or Fillers.
+3. Select the desired layers in the DXF. There is an option to import them **All** or **Clear** all previously selected layers from importing.  Multiple layers of the DXF can be selected.  
 
 &nbsp;
-4. Click **Import DXF**.
+4. Select a layer in the portion **Select a layer to import the dxf into**: from the layer dropdown list.  The list will contain the current layers listed in the project.  If a layer is missing it must first be added before importing (such as Filler or Solution layers).
 
-  >**NOTE: During the import, the user can run the Fix All Polygons (Fix) on the imported features. The Error layer will be used to store errors. To proceed past the error warning, click the x in the upper right corner**
+&nbsp;
+5. Click **Import DXF**. Pressing cancel will close the window.
+
+  >**NOTE: During the import, the user can run the Fix All Polygons (Fix) on the imported features by clicking the ‘Fix’ button. The Error layer will be created and used to store any errors. To proceed past the error warning and the green message box displayed, click the x in the upper right corner of the window.**
 
 ![Image](/image/polygon_error.jpg)
 
 
 ##### File > Open Model
 
-The Open Model function is used to import **models** and **mineplans** into a project. 
-After selection, the user is required to specify the directory and file location for the Model. The supported file formats are: 
+The Open Model function is used to import **Models** and **Mineplans** into a project. OMF files (Open Mining Format) can also be saved here. After selection of a file type, the user is required to specify the directory and file location. The supported file formats are: 
 
 - JSON
 - CSV
-- TAM (Typed Array Model)
-- Save TAM
+- OMF
 
 
 >**NOTE**
 
->- **It is important that all CSV files used for data import are in the 'generic' format (for example, 43914 with no decimals for the pm property). Commas should not be used as thousand delimiters in data records (including grades).**
+>- **It is important that all CSV files used for data import are in the 'generic' format (for example, 43914 with no decimals for the pm property). Commas should not be used.**
 
->- **Dates should be entered in the Excel serial format: m/d/yyyy.** 
+>- **Dates should be entered in the Excel serial format. Avoid format: m/d/yyyy.** 
 
-To import a CSV file:
+To import a CSV or OMF file:
 
-1. Click **File > Open Model > CSV** and import the Model or Mineplan layer.
+1. Click **File > Open Model > CSV** and select the file.
 
+2.	Select the Opencontour layer for the imported data from the dropdown.  The options are shown below:
+
+ ![Image](/image/OMF_CSF_Option.jpg)
+
+ • The Model (small) option is for smaller CSV files.  
+ •	Importing into the Mineplan option is used for leach stacking projects.
+  
   ![Image](/image/CSV_IMPORT.jpg)
-&nbsp;
-2. Enter the following details.
 
-  ![Image](/image/CSV__element_details.jpg)
 
 &nbsp;
-3. After addressing each entry, click **Import**.
+3. Enter the following details in the displayed window.
+
+  ![Image](/image/CSV_IMPORT_DETAILS.jpg)
+    ![Image](/image/CSV_IMPORT_TABLE.jpg)
+
+&nbsp;
+4. Click **Import**. The imported file name will be written beside the chosen layer name in the Layer Menu.
+
+**NOTE: If a Mineplan or Model layer exists in the project it may be saved as an OMF model file using File>Open Model>Save .OMF.  There are limited display options for such data.  The Legend and Labels display in the Drawing Window may be used but the Charting functionality cannot.**
 
 
 ##### File > Save As PDF
 
-This function is used to create a PDF file for plotting. Everything that is presented in the Drawing Window will be captured and saved. Objects should be centered to be included in the popup prompt's scale.
+This function is used to create PDF files for plotting. Everything that is presented in the Drawing Window will be captured and saved. Objects should be centered to be included in the popup prompt's scale.
 
-1. Click **File > Save As PDF**. The Print PDF window appears.
+1.	Prepare the Drawing Window display for printing.  Whatever is displayed in the Drawing Window will be captured.  Objects should be centered so the scale entered in the popup prompt includes them.  If displayed, the grid will be included.
+
+2. Click **File > Save As PDF**. The Print PDF window appears.
 
   ![Image](/image/save_as_PDF.jpg)
 
 &nbsp;
-2. Each entry in this template is configurable, including the Size and Scale options.
+3. Each entry in this template is configurable, including the Size and Scale options. Use the dropdown options to modify each.
 
 &nbsp;
-3. Click **Print** to save the file as a PDF.
+4. Click **Print** to save the file as a PDF.
 
 <hr>
 
@@ -276,6 +301,10 @@ The data represents a summary of the attributes of the features in the CutterRes
 - Detail
 - Summary By 
 
+  ![Image](/image/Detail_summaryby.jpg)
+
+
+
 **Detail View **
 
 1. Click **Display > Volumetric > Detail**. The Volumetric Summary window appears.
@@ -283,63 +312,63 @@ The data represents a summary of the attributes of the features in the CutterRes
   ![Image](/image/Volumetric_summary.jpg)  
 
 &nbsp;
-2. For more information on each field, see the following table.
+2. The properties for each CutterResult shape are explained in the following table. The table values can be sorted by pressing the header, e.g. (pn, Phase Name).  This sorts the pn entries in the entire table so they are listed alphanumerically. An arrow will appear beside the sorted header.  Repressing the header will sort them in the opposite direction.  The table data can be copied and pasted directly into Excel, or the entire table can be saved in CSV format using the Export button.  Exporting will create a comma delimited file that may be viewed in Excel, or a similar program.  
 
   ![Image](/image/Details_table.jpg) 
 
 
 **Summary By**
 
-These summaries are used to query pit volumes, design dumps, and construct leach pads. It is applied to any shapes that are present in the CutterResult layer. The mass data is independent of the Mineplan
+These summaries are used to query pit volumes, design dumps, and construct leach pads applied to any shapes that are present in the CutterResult layer. The mass data is independent of the Mineplan
 
 The **Summary By** provides three options to filter:
 
-- Filler/Cutter
+- Filler/Cutter#
 
 - Phase Name 
 
 - Bench 
 
-**Filler/Cutter**: It summarizes the cut and fill areas, volumes, and mass and generates a file with a calculation for each cut fill number.
+**Filler/Cutter#**: This option summarizes the cut and fill areas, volumes, and mass and generates a file with a calculation for each cut fill number.
 
   ![Image](/image/Volumeteric summary_1.jpg) 
 
 
-**Phase Name**: It functions similarly to the **Filler/Cutter** option, except that each line of data will include the Phase Name (pn). The similarities between cut fill num and pn can be noticed in the detail report.
+**Phase Name**: This option functions similarly to the **Filler/Cutter#** option, except that each line of data will include the Phase Name (pn). The similarities between cut_ﬁll_num and pn can be noticed in the detail report.
 
   ![Image](/image/Volumeteric summary_2.jpg) 
 
 
-**Bench**: The Bench option makes use of elevation (z) but does not provide information about the initial cut fill num or pn.
+**Bench**: The Bench option makes use of elevation (z), but does not provide information about the initial cut_ﬁll_num or pn.
 
   ![Image](/image/Volumeteric summary_3.jpg) 
 
 
 ##### Display > Contour By PM
 
-This function can be used to populate the baseResult layer with period map contours after a schedule is run.
+This function can be used to populate the BaseResult layer with period map contours after a schedule is run.
 
 1. Click **Display > Contour By PM**. The Contour By Period Mined window appears.
 
     ![Image](/image/ContourByPM.jpg) 
 
-You can enter a period number (for example: 5) or a date in the **Period Mined (pm)** entry box. The single down arrow displays a calendar, while the other increments the current date.
+Enter a period number (for example: 5) or a date in the **Period Mined (pm)** entry box. The single down arrow displays a calendar.
 
 Fillers can obstruct Cutters if they are positioned on top of each other.  Hence, there is a choice for their display.  This is apparent in pits where backfilling practices are used.
 
 When the Filler and Cutter layers' checkboxes are checked, this function creates contours in the BaseResult layer for them.
 
 
-##### Display > Grid Settings
+##### Display > Gridline Settings
 
-Grid settings are used to include grids in the project.
+Grid settings are used to include grids in the project Drawing Window display.
 
-1. To select the grid interval, Click the **Display > Grid Settings**. 
+1. To select the grid interval, click the **Display > Gridline Settings**. 
 
   ![Image](/image/Grid_settngs.jpg) 
 
 &nbsp;
-2. Click the **Save** button.  The View Latitude and Longitude button on the Main Menu will be activated. To bring the display to a halt, push the **View Latitude** and **Longitude** button until it turns green. The following sections cover each option in the **Gridline Settings** box.
+2. Click the **Save** button.  The View Latitude and Longitude button on the Main Menu will be activated. To bring the display to a halt, push the **View Latitude and Longitude** button until it turns green. The following sections cover each option in the **Gridline Settings** box.
 
 
 **Scale Bar** 
@@ -374,12 +403,15 @@ The 3D view options are:
 
 -	**Surface** – displays the contours as an opaque overlay.
 
--	**Section** – shows a sliced view from a selected vantage point. It allows the user to change the view by using the Change View option from the Display menu.
+- **New Surface** – displays the contours of each selected surface as an opaque overlay with property shading options.
 
--	**Timeline** – animation of the project for the project life.
+- **New Timeline** – animation of the project for the project life with property shading options.
+
+-	**Cross Section** – shows a sliced view from a selected vantage point. It allows the user to change the view section in a popup menu option.
 
 
-These tools are detailed in the 3D View Tools section.
+
+These options are detailed in the 3D View Tools section.
 
   ![Image](/image/3D_new_browser_tab.jpg) 
 
@@ -401,60 +433,73 @@ The following options are available in the design menu:
 
 ##### Design > Copy All To
 
-This option enables you to copy all features from one layer to another. To copy a layer to another, follow the steps below:
+This option enables you to copy all features from the active layer one layer to another by following the steps below:
 
-1. Activate the layer from which you'd like to copy features.
+1. Activate the layer with the features to be copied.
 
-2. Click **Design > Copy All To** to access to the list of layers in the project.
+2. Click **Design > Copy All To** to access to the list of layers in the project.  If the destination layer does not exist, it should be added prior to copying. 
 
   ![Image](/image/Figure 4 43 Dropdown Menu, Design-CopyAllTo Options.jpg)
 
 &nbsp;
-3. Select a layer. A notification message will appear.
+3. Select a layer. A notiﬁcation message will appear with the layer information features were copied from and to.
 
   ![Image](/image/Figure 4 42 Copy All To Notification.jpg)
 
 &nbsp;
-4. Press **Ok**. In the **Drawing Window**, the copied features will be displayed. Each feature will be colored blue, giving the appearance that the function is being used.
+4. Press **Ok**. In the **Drawing Window**, the copied features will be displayed. Each feature will initially be displayed colored blue, giving the appearance that the function is being used.
 
 
 ##### Design > Reorder Fillers
 
 The **Reorder Fillers** option in the Dropdown Menu can be used to reorder filler layers that were built out of order for a particular project.
 
+  ![Image](/image/Recorded_filler.jpg)
+
+
 To reorder the filler layer, follow the below steps:
 
-1. Click **Design > Reorder Fillers**. Reorder Filler Layers window will appear, listing all the Filler layers in the project along with their original cut fill number.
+1. Click **Design > Reorder Fillers**. The Reorder Filler Layers window will appear, listing all the Filler layers in the project along with their original cut fill number (cut_fill_num) and assigned phase name (pn, written in the Layer Menu).
+
 
     ![Image](/image/Figure 4 45 Initial Reorder Filler Layers Window.jpg)
 
 
 2. Each Filler listed in the **Reorder Filler Layers** window can be dragged to a different listing position in the **Reorder Filler Layers** window. To move the Filler to a new location in the list, hold down the left mouse button and drag the Filler.
 
-    ![Image](/image/Figure 4 46 Reorder Filler Layers Window; Filler Order Listing Changed.jpg)&
+    ![Image](/image/Figure 4 46 Reorder Filler Layers Window; Filler Order Listing Changed.jpg)
 
 
 3. Click **Reorder** button. The original position of the layers in the **Layer Menu** will not change, but their cut fill num will. The cut_fill_num will be assigned to the Filler layers so they are numbered sequentially
 
 
-4. An advisory notification will appear before approving the change. Click **Ok**.
+4. An advisory notification will appear before approving the change. This step involves automatic repetition of the Cut Contour with Cutter/Filler function upon clicking **Ok**.
 
     ![Image](/image/Figure 4 49 Reorder Filler Layers Change Notification Window.jpg)
+    ![Image](/image/Figure 4 49 Reorder Filler Layers Change Notification Window1.jpg)
 
->**NOTE: The order and positions of the layers listed in the Layer Menu can be rearranged, but any changes will not be saved.**
+>**NOTE: The order and positions of the layers listed in the Layer Menu can be rearranged, but any changes will not be saved until the project is saved.**
 
+
+##### Design > Organize Fillers 
+
+Selection of this option will organize the fillers displayed in the Layer Menu according to their fill order, using the cut_fil_num property.
 
 <hr>
 
 ### 4.2.5 Help 
 
-To access the help documentation, click the help Tab and select Help Guide. 
+To access the help documentation, visit help.opencontour.com or go to the Help option in the Dropdown Menu.  
 
   ![Image](/image/Figure 4 76 Dropdown Menu, Help Options.jpg)
 
--  **Quick Reference Guide**: Provides an overview of the Opencontour layout and techniques.
 
--  **Help Guide**: Opens a new browser tab with a searchable full Help Guide page.
+##### Help > Quick Reference
+This option is a quick reference guide to using Opencontour.  This will open in a new browser tab.
+
+##### Help > Help Guide HTML
+
+This will take you an online help tool in a new browser tab.
 
 <hr style="height:2px;border-width:0;color:gray;background-color:grey">
 
@@ -475,10 +520,10 @@ Select the layer from the **Layer Menu** to display the hidden buttons.
 ![Image](/image/button_list.jpg)
 
 
-- **Zoom to full extent** ![Image](/image/Zoom to full extent.jpg): This button will magnified the view to show the full scope of the project.
+- **Zoom to full extent** ![Image](/image/Zoom to full extent.jpg): This button will magnify the view to show the full project.
 <hr>
 
-- **Zoom to layer extent** ![Image](/image/Zoom to layer extent.jpg): This button will magnified the view to the active layer extent at the current elevation indicated in the Message bar.
+- **Zoom to layer extent** ![Image](/image/Zoom to layer extent.jpg): This button will magnify the view to the active layer extents at the current elevation indicated in the Message bar.
 <hr>
 
 - **Up one Level** ![Image](/image/Up one Level.jpg): Move the Drawing Window up in elevation by the BenchHeight value in the Project Settings.
@@ -490,50 +535,59 @@ Select the layer from the **Layer Menu** to display the hidden buttons.
 - **Copy Cutter Up Level** ![Image](/image/Copy Cutter Up Level.jpg): Expand the pit contour up or down to the next contour’s elevation. It is used when constructing pits, dumps, or leach pads.
 <hr>
 
-- **Cut Contour with Cutter/Filler** ![Image](/image/Cut Contour With Cutter-Filler.jpg):  Use the **Cut Contour with Cutter/Filler** button ![Image](/image/Cut Contour With Cutter-Filler.jpg) on the respective Cutter and Filler layers in the Layer Menu to cut or filled Base topography. This populates two levels automatically: the **BaseResult** layer and the **CutterResult** layer, both of which are saved as part of the Group files. These layers are rewritten each time this button is clicked.
+- **Cut/Fill Before** ![Image](/image/Cut_fill before.jpg)
+All Filler layers with cut_fill_num vales less that the active layers’ number will be processed in the Cut Contour with Cutter/Filler function.  The current Filler will be excluded.
+
+<hr>
+
+- **Cut Contour with Cutter/Filler** ![Image](/image/Cut Contour With Cutter-Filler.jpg): The **Cut Contour with Cutter/Filler** button ![Image](/image/Cut Contour With Cutter-Filler.jpg) on the respective Cutter and Filler layers in the Layer Menu to cut or filled Base topography. This populates two layers automatically: the **BaseResult** layer and the **CutterResult** layer, both of which are saved as part of the Group files. These layers are rewritten each time this button is clicked.
 
 
 
 
 <hr>
 
-- **Add Cutter Layer** ![Image](/image/Add Cutter Layer.jpg): Adds another Cutter layer. Each additional layer will be sequentially numbered and the Phase Name (pn) should be edited for each.
+- **Add Cutter Layer** ![Image](/image/Add Cutter Layer.jpg): Located under the grouped **Add Layer** function, this adds and activates another Cutter layer. Each additional layer will be sequentially numbered and the new layer will be active. The Phase Name (pn) should be edited for each.
 <hr>
 
-- **Add Filler Layer** ![Image](/image/Add Filler Layer.jpg): Adds another Filler layer.  Each additional layer will be sequentially numbered and the Phase Name (pn) should be edited for each.
+- **Add Filler Layer** ![Image](/image/Add Filler Layer.jpg): Located under the grouped **Add Layer** function, this adds and activates another Filler layer.  Each additional layer will be sequentially numbered and the new layer will be active.  The Phase Name (pn) should be edited for each. 
 <hr>
 
-- **Non Bench** : Non Bench will remove all features if it does not lie on a project’s mid bench interval elevation. To use:
 
-    1. Activate the Layer from the **Layer Menu** that contains features that are not at project elevation levels.
+- **Fix All Polygons**![Image](/image/Fix All Polygons.jpg): Use of the **Fix All Polygons** function enables checking and fixing of multiple polygon type errors and project fixes, such as ensuring that the displayed features contain beginning and ending vertices or deleting contours that do not exist on mid-bench intervals. The errors may be first checked using the **Check** button, then fixed using the **Fix** button by the software or manually.  Errors found are stored in the Error layer, which may be created or overwritten.
 
-    2. Click the Non Bench button to remove them all from the layer at each erroneous elevation. This option is very useful when importing a DXF file with horizontal slicing every 3 feet and significant curves every 9 feet. This is not necessary for contours of 3 and 6 feet.
+  ![Image](/image/Fix All Polygons_menu.jpg)
+
+To use
+
+  1. Activate the Layer from the Layer Menu.
+  2. Click the Fix All Polygons button  ![Image](/image/Fix All Polygons.jpg) from the Main Menu. Select a contour at the current elevation displayed in the Message bar  to prepare the features for editing.
+  3.	Choose the top row options: for All Features, Selected Features (requires prior selection of the feature before using the Fix All Polygons function), or the Current Elevation.
+  4.	Now tick the error types to be fixed or checked.
+  5.	Press either the **Check** or **Fix** button.  Check will just count the errors fround, but not fix them.
+  6.	Select **OK** in the notiﬁcation message. The notiﬁcation message will convey the ﬁxes made.
+
+- The function removes and checks for the following things:
+    - The total number of features
+    - The existence of multi polygons or features
+    - If the ﬁrst coordinate is the same as the last in the features, i.e. closing of a polygon Feature duplication and removal
+    - Areas of less than ﬁve, to discard minute features 
+    - Features with less than two coordinates
+    - Kinks
+    - Non Bench, removed features not on the midBench elevations
+    - Non Polygons 
+    - Reduce Extra Points (Fix Only), 0.1 Checks for/Fixes extra points in a feature and reduces them to the quantity entered.  
+    - Duplicate Polygons
+    - 3D Errors Check (Manual Fix), this will indicate where a contour is crossed on the elevation above or below.  Error layer description will read “Contours overlapping on either elevation above or below”
+
+
 <hr>
 
-- **Fix All Polygons**![Image](/image/Fix All Polygons.jpg): Use of the Fix The All Polygons function ensures that the displayed features contain beginning and ending vertices.To use:
-
-    1. activate the Layer from the Layer Menu.
-    2. Click the Fix All Polygons button ![Image](/image/Fix All Polygons.jpg) from the Main Menu. Select a contour at the current elevation displayed in the Message bar  to prepare the features for editing.
-    3. Select **OK** in the notification message. The notification message will convey th fixes made.
-
-  - The function removes and checks for the following things:
-      - The total number of features
-      - The existence of multi polygons or features
-      - If the first coordinate is the same as the last in the features, i.e. closing of a polygon
-      - Feature duplication and removal
-      - Areas of less than five, to discard minute features
-      - Features with less than two coordinates
-      - Kinks 
-  
-
-
-<hr>
-
-- **Display Vertice Number** ![Image](/image/Display Vertice Number.jpg): The Display Vertice Number function is useful for displaying the point order in a contour.  It is possible to see kinks in the numbers presented when they overlap each other.To use:
+- **Display Vertice Number** ![Image](/image/Display Vertice Number.jpg): This function is useful for displaying the point order in a contour.  It is possible to see kinks in the numbers presented when they overlap each other. To use:
     
     1. Activate the Cutter or Filler layer from the Layer Menu. 
     2. Select the feature tool ![Image](/image/feature tool.jpg), and select a contour to be labelled.
-    3. Click the Display Vertice Number button ![Image](/image/Display Vertice Number.jpg). Each vertice on the selected contour will be assigned a sequential number, making it easier to spot kinks, etc., where the numbers overlap.
+    3. Click the Display Vertice Number button ![Image](/image/Display Vertice Number.jpg). Each vertice on the selected contour will be assigned a sequential number, making it easier to spot kinks, etc.
 
     ![Image](/image/Figure 5 7 Numbered Vertices.jpg)
       
@@ -543,7 +597,7 @@ Select the layer from the **Layer Menu** to display the hidden buttons.
 
     1. activate the Cutter or Filler layer in the Layer Menu that needs toe and crest lines.
 
-    2. Click the **Toe Crest button** ![Image](/image/Add Toe Crest.jpg).
+    2. Click the **Toe Crest button** ![Image](/image/Add Toe Crest.jpg), located under the grouped **Toe Crest** function.
 
 The contours designed and viewed are at mid bench elevations. Bench elevation contours may be inserted and viewed, but they are not part of the major design process steps.
 
@@ -552,76 +606,113 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
 - **Clear Toe Crest**![Image](/image/clear Toe Crest.jpg): Opencontour can remove added toe and crest lines in a layer. Only available when the Cutter, Filler or BaseResult layer is active. 
     
     1. Activate the Cutter layer that needs toe and crest lines removed.
-    2. Click the **Clear Toe Crest**![Image](/image/clear Toe Crest.jpg) button.
+    2. Click the **Clear Toe Crest**![Image](/image/clear Toe Crest.jpg) button, located under the grouped **Toe Crest** function.
 
 
 <hr>
 
-- **Add Box** ![Image](/image/add box.jpg): Click this button to add a border around the extents of the topography contours at a selected elevation. Available when Base layer is active.  
+- **Add Box** ![Image](/image/add box.jpg): Click this button to add a border around the extents of the topography contours at the current elevation. Available when Base layer is active.  
 <hr>
 
-- **Select feature** ![Image](/image/feature tool.jpg): This option enables selection of the desired feature when the relevant layer is selected from the Layer Menu.  
+- **Choose feature** ![Image](/image/feature tool.jpg): This option enables selection of the desired feature when the relevant layer is selected from the Layer Menu. This button is located under the grouped Select function and operates on the active layer and current elevation.  Selected features will display a highlighted green.
 <hr>
 
-- **Select features with a Box**![Image](/image/Select features with a Box.jpg): 
+- **Select features with a Box**![Image](/image/Select features with a Box.jpg): This option enables selection of the active layer’s features. This button is located under the grouped **Select** function and operates on the active layer and current elevation.  
 
-    1. Click the first box corner![Image](/image/Select features with a Box.jpg) to select a feature in the active layer.
-    2. Hold the mosuse button and move the mouse to draw the box to the diagonally opposite corner
-    3. All features in the active layer that are within or touch the drawn box will be seleced and highlighted in green.
+    1. Click the first box corner![Image](/image/Select features with a Box.jpg) to select a feature in the active layer, located under the grouped **Select** function.
+    2. Hold the mouse button and move the mouse to draw the box to the diagonally opposite corner
+    3. All features in the active layer that are within or touch the drawn box will be selected and highlighted in green.
 <hr>
 
-- **Add Haul/Load Features** ![Image](/image/Add Haul-Load Features.jpg) : Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, availability, utilization, efficiency, and fleet count. Loaders will be given a tnsPerHr productivity rating.  Trucks require rated speeds for gradients that are low, medium, and high & a ‘truckfactor’ (truck payload) & rank.  The units used in the speeds must match those of the project files (i.e. imperial or metric).  
-<hr>
+- **Select Vertices with a Box**![Image](/image/Select Vertices with a Box.jpg): Press this button to select multiple vertices in the box drawn at the current elevation for the active layer. These selected vertices may then be deleted from the feature by right-clicking with the mouse and selecting **Remove Vertices**. 
+Panning is allowed with the right mouse button, but the previously drawn box will no longer be active.
 
-- **Add Dump Features** ![Image](/image/Add Dump Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, capacity, tns (populated during a schedule run), and name.  Available when Schedule layer is active.  
-<hr>
-
-- **Add Phase Features** ![Image](/image/Add Phase Features.jpg) : Click this button and specify the location with a left mouse click to insert a feature (intersection) that contains an elevation (z), type, name and order.  Available when Schedule layer is active.
-<hr>
-
-- **Add Stockpile Features** ![Image](/image/Add Stockpile Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin and owmax for determining the values of the Routing variable (data.ow) blocks accepted on that stockpile.  Available when Schedule layer is active.
-<hr>
-
-- **Add Leach Crush Features** ![Image](/image/Add Leach Crush Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted.  The that feature name must be leach; it must match the filler Phase Name (pn) name of each leach cell (Filler) created.  Available when Schedule layer is active.  Material mined reports here after stockpiling.
-<hr>
-
-- **Add Leach ROM Features** ![Image](/image/Add Leach ROM Features.jpg): Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted.  The that feature name must be leach; it must match the filler Phase Name (pn) name of each leach cell (Filler) created.  Available when Schedule layer is active.  Material mined reports directly here rather than via a stockpile.
-
-- **Add Point Features** ![Image](/image/Add Point Features.jpg): This will add point features to the active layer.  Only available when the Schedule layers are active. 
+  ![Image](/image/Select Vertices with a Box_details.jpg)
 
 <hr>
 
-- **Add Line Features** ![Image](/image/Add Line Features.jpg): When the Roads layer is active, this property becomes available.  This will add lines to those selected layers.  
+
+
+
+- **Add Haul/Load Features** ![Image](/image/Add Haul-Load Features.jpg) : This button is located under the grouped **Add Schedule Feature** function, visible when the Schedule layer is active. Click this button and specify the location with a left mouse click to insert a feature.  A popup widow appears, with tabs separating Load and Haul features.  Each has dropdown options with units for selection.  
+Both feature types will have an elevation, type, name, availability, utilization, eﬃciency, and ﬂeet count. 
+
+    - Loaders will be given a tnsPerHr productivity rating. 
+  - Trucks require rated speeds for gradients that are low, medium, high, a ‘truckfactor’ (truck payload) and rank. 
+  - The units used in the speeds and tonnages must match those of the project ﬁles (i.e. imperial or metric).  
+Re-click the **Add Haul/Load Features** button when feature addition is complete.
+
 
 <hr>
 
-- **Add Polygon Features** ![Image](/image/Add Polygon Features.jpg): To start drawing polygons or contour lines:
+- **Add Dump Features** ![Image](/image/Add Dump Features.jpg): This button is located under the grouped **Add Schedule Feature** function, visible when the Schedule layer is active. Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, capacity, tns (populated during a schedule run), and name. Re-click the **Add Dump Features** button when feature addition is complete. 
+<hr>
+
+- **Add Phase Features** ![Image](/image/Add Phase Features.jpg) : This button is located under the grouped **Add Schedule Feature** function, visible when the Schedule layer is active. Click this button and specify the location with a left mouse click to insert a feature (intersection) that contains an elevation (z), type, name and order.   These phase features are used to connect a phase to the roads.
+
+    Re-click the **Add Phase Features** button when feature addition is complete.
+<hr>
+
+- **Add Stockpile Features** ![Image](/image/Add Stockpile Features.jpg): This button is located under the grouped **Add Schedule Feature** function, visible when the Schedule layer is active. Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin and owmax for determining the values of the Routing variable (data.ow) blocks accepted on that stockpile. 
+
+    Re-click the **Add Stockpile Features** button when feature addition is complete.
+<hr>
+
+- **Add Leach Crush Features** ![Image](/image/Add Leach Crush Features.jpg): This button is located under the grouped **Add Schedule Feature** function, visible when the Schedule layer is active. Material mined reports here after stockpiling. 
+
+    Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order, and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted. The feature name must be leach; it must match the ﬁller Phase Name (pn) name of each leach cell (Filler) created. 
+
+    Re-click the **Add Leach Crush Features** button when feature addition is complete.
+<hr>
+
+- **Add Leach ROM Features** ![Image](/image/Add Leach ROM Features.jpg): This button is located under the grouped **Add Schedule Feature** function, visible when the Schedule layer is active. Material mined reports directly here rather than via a stockpile. Click this button and specify the location with a left mouse click to insert a feature that contains an elevation, type, name, a processing order and a owmin & owmax for determining the values of the Routing variable (data.ow) blocks accepted. The feature name must be leach; it must match the ﬁller Phase Name (pn) name of each leach cell (Filler) created. 
+
+    Re-click the **Add Leach ROM Features** button when feature addition is complete.
+
+<hr>
+
+- **Add Point Features** ![Image](/image/Add Point Features.jpg): This will add point features to the active layer. Only available for the layers: 
+
+    - Schedule (used for inserting intersections to connect phases to roads), 
+    - Model (used to insert blocks in the model layer), or 
+    - Import (use to insert points with comments).
+
+<hr>
+
+- **Add Line Features** ![Image](/image/Add Line Features.jpg): When the Roads or Solution layer is active, this property becomes available. This will add lines to those selected layers. 
+<hr>
+
+- **Add Polygon Features** ![Image](/image/Add Polygon Features.jpg): To start drawing polygons or contour lines in active Base, Geotech, Cutter, Filler, BaseResult, CutterResult or Solution layers:
 
     1. Activate the appropriate layer.
     2. Click the **Add Polygon Features** ![Image](/image/Add Polygon Features.jpg) button. 
     
-      Only available when the Base, Cutter, Filler, BaseResult or CutterResult layers are active.  
+
 <hr>
 
-- **Modify features**![Image](/image/Modify features.jpg): 
+- **Edit features** ![Image](/image/Modify features.jpg): Available for any active layer that contains features that may be drawn:
+
 
     1. To add a vertice, click the left mouse button once on the line where the vertice is to be placed. 
     2. To delete a vertice, click the left mouse button once on the vertice to be deleted. 
     3. To move a vertice, hold down the left mouse button and drag the vertice. Release when it moves to the desired location. 
 <hr>
 
-- **Snap to paths, and vertices** : Allows snapping the cursor to lines and vertices in the Drawing Window for the activated layer.  
+- **Snap to layer** ![Image](/image/Snap to layer.jpg) : Allows snapping the cursor to lines and vertices in the Drawing Window for the activated layer when drawing or editing polygons or lines.   
 <hr>
 
-- **Remove features**![Image](/image/Remove Features.jpg): Delete a feature from the active layer. To delete an entire feature in an active layer:
+- **Snap to All** ![Image](/image/Snap to All.jpg) : Allows snapping the cursor to lines and vertices in the Drawing Window for all layers when drawing or editing polygons or lines. 
+<hr>
+
+
+- **Remove features** ![Image](/image/Remove Features.jpg): Delete a feature from the active layer by:
 
       1. select **Remove features**![Image](/image/Remove Features.jpg) from the Main Menu.
 
       2. Select the feature to be removed from the drawing screen. Deselect this button when finished.
 <hr>
 
-- **Drag features** ![Image](/image/Drag Features.jpg): Drag a feature to a different location (but not elevation) in the Drawing Window.  
-
+- **Drag features** ![Image](/image/Drag Features.jpg): Drag a feature on the current elevation to a diﬀerent location (but not elevation) in the Drawing Window for the active layer. Press and hold the left-mouse button to select and drag, release when complete.
 <hr>
 
 - **Modify Number of Feature Vertices**![Image](/image/Modify Number of Feature Vertices.jpg): If a feature has too many vertices, this will reduce the unnecessary vertices to make the feature easier to work with. To reduce the number of vertices, use the Vertice value in the **View Settings** as the distance between vertices.
@@ -630,26 +721,36 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
 
       2. Press the **Modify Number of Feature Vertices button** ![Image](/image/Modify Number of Feature Vertices.jpg)
 
-      3.	Select the feature.
+      3.	Select the feature. Points will either be added or removed.  
 
 
 <hr>
 
-- **Create Curve**![Image](/image/Create Curve Smoothing A Feature.jpg): A curved line can be created using this tool. The function outcome will depend on the value entered for the Vertice and it is changeable through the **View Settings**.
+- **Create Curve**![Image](/image/Create Curve Smoothing A Feature.jpg): A curved line can be created using this tool, located under the grouped Curve function. The function outcome will depend on the value entered for the Vertice, changeable through the **Project Settings**, or **View Settings**.
 
     1. Activate the feature layer. The feature’s layer must be activated to insert vertices into the curve.
 
     2. Select a feature in the active layer.  
 
-    3. Click **Create Curve** button ![Image](/image/Create Curve Smoothing A Feature.jpg). The selected feature will be replaced with a curved feature, with vertices inserted as needed. This function is active in layers with features (Base, Geotech, Cutter, Filler & Roads). This function uses the Vertice number written in the Project Settings, or View Settings.  
-  
+    3. Click **Create Curve** button ![Image](/image/Create Curve Smoothing A Feature.jpg). The selected feature will be replaced with a curved feature, with vertices inserted as needed. This function is active in layers with features (Base, Geotech, Cutter, Filler & Roads). 
 
 <hr>
+
+- **Smooth Curve** ![Image](/image/Smooth Curve.jpg): A curved line can be created using this tool, located under the grouped Curve function. The function outcome will depend on the value entered for the vertice, changeable through the **Project Settings**, or **View Settings**.  
+
+    1.	Activate the feature layer. The feature’s layer must be activated to insert vertices into the curve.
+    2.	Select a feature in the active layer.
+    3.	Click the starting and ending vertices of a feature, between which the curve should be placed.  The string direction will determine the section curved (displaying the Vertice number can show the string direction).
+    4.	Click **Smooth Curve** button. The selected feature will be replaced with a curved feature between the two points selected, with vertices inserted as needed. This function is used in layers with features (e.g. Base, Geotech, Cutter, Filler & Roads). 
+  <hr>
+
+
+
  
-- **Split Polygon** ![Image](/image/Split Polygon.jpg): Pick one feature, then pick a second feature. The first feature will split the second feature.  The area of the first feature selected inside the second will be maintained. The remainder of the first feature selected can be deleted.  
+- **Split Polygon** ![Image](/image/Split Polygon.jpg): Located under the grouped **Polygon Functions** button, first pick the cutting polygon then pick the polygon to be cut, the first polygon will split the second polygon. The area of the first polygon selected inside the second will be maintained, the remainder of the first polygon selected can be deleted.  
 <hr>
 
-- **Union Two Polygons** ![Image](/image/Union two polygons.jpg): Pick one feature then pick another feature, these two features will join to form a new feature.  If using ramps, the start of the ramp (denoted by the red circle) will be retained for the second feature selected.  
+- **Union Two Polygons** ![Image](/image/Union two polygons.jpg): Located under the grouped **Polygon Functions** button, pick one feature then pick another feature, these two features will join to form a new feature. If using ramps, the start of the ramp (denoted by the red circle) will be retained for the second feature selected.  
 <hr>
 
 - **Set First Poly Vertex** ![Image](/image/Set First Poly Vertex.jpg): Moves starting location for ramp (red dot) to vertice on feature specified.  
@@ -660,7 +761,7 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
  
 <hr>
 
-- **Properties** ![Image](/image/Properties.jpg): Displays the table of layer or feature Properties (the layer should be active in the Layer Menu) in the Drawing Window.  To select this display box, left-click the Properties button or hit the **p** key on the keyboard.
+- **Properties** ![Image](/image/Properties.jpg): Displays the feature Properties window (the layer should be active in the Layer Menu) in the Drawing Window. To select this display box, left-click the Properties button or hit the p key on the keyboard.
     
     - Click the **+** button to add parameters to the Properties table.
     - Clcik the **x** button to delete parameters from the Properties table.
@@ -669,20 +770,20 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
 <hr>
 
 - **Measure**![Image](/image/Measure.jpg): 
-    - Distance: To determine the distance, use the **Measure** tool ![Image](/image/Measure.jpg). Left-click on the first vertex in the Drawing Window, followed by the second vertex to be measured. The result will appear in the Message bar.  
+    - Length: To determine the distance, use the **Measure** tool ![Image](/image/Measure.jpg). Left-click on the ﬁrst vertex in the Drawing Window, followed by the second vertex to be measured. The result will appear in the Message bar and be shown in the Drawing Window as the cursor moves away from the selected origin. 
        
           ![Image](/image/Figure 5 2 Measured segment displays in the Message bar.jpg)
        
     
     - Strike: This describes the angle between the North vector and the line direction. For strike, select the two contour vertices in the direction they were drawn (clockwise or counterclockwise).  
     
-    - Wall Angle: When measuring wall angles, select the line for the 1st mid bench, then select a line for a higher or lower mid bench in the same vertical plane.  
+    - Wall Angle: When measuring wall angles, select the line for the 1st mid bench, then select a line for a higher or lower mid bench in the same vertical plane.   
 
         1. Select a wall contour line for the first mid bench.  The lighter blue line that appears acknowledges the first selection on the 1950 elevation.
 
-        2. Move to the next mid bench using q,![Image](/image/Q.jpg), w, or ![Image](/image/W.jpg). Then select a line perpendicular at a higher or lower mid bench in the same vertical plane. The next mid bench measured here is at the 1945 level.
+        2. Move to the next mid bench using the q key,![Image](/image/Q.jpg), w key, or ![Image](/image/W.jpg). Then select a line perpendicular at a higher or lower mid bench in the same vertical plane. The next mid bench measured here is at the 1945 level.
         3. On selection of the second line, the Message bar will display the wall angle if measured correctly.
-        4. Click the **Measure** button to exit the measuring and snapping activities. 
+        4. Click the **Measure** button to exit the measuring activities. 
 
         ![Image](/image/Figure 5 3 Measuring Wall Angle, From (Start) Elevation, 1950.jpg)
 
@@ -691,33 +792,36 @@ The contours designed and viewed are at mid bench elevations. Bench elevation co
         ![Image](/image/Figure 5 5 Message Bar Display, Wall Angle Shown On The Far Right.jpg)
 <hr>
 
-- **View Latitude and Longitude** ![Image](/image/View Latitude And Longitude.jpg): Activates display of latitude and longitude gridlines, scale bar and north arrow. Click **View Latitude and Longitude**![Image](/image/View Latitude And Longitude.jpg) button. The settings selected will be displayed in the Drawing Window. 
+- **View Latitude and Longitude** ![Image](/image/View Latitude And Longitude.jpg): Activates display of latitude and longitude gridlines, scale bar and north arrow (compass). Click **View Latitude and Longitude**![Image](/image/View Latitude And Longitude.jpg) button. The settings selected will be displayed in the Drawing Window. 
 
 <hr>
 
-- **Export CSV** : Available for CutterResult, Mineplan & Import layers only.  
+
 
 <hr style="height:2px;border-width:0;color:gray;background-color:grey">
 
 ## 4.4 Utility Menu
 
-The utility menu enables you to customize the standard interface by providing access to secondary actions and tools such as project properties, create schedule, create script, report etc.
+The utility menu enables you to customize the standard interface by providing access to secondary actions and tools. These include: Project Settings, Project Properties, Schedule, Scripts, Reports, Charts, etc.
 
-The Utility Menu is located to the right of the Drawing Window, above the Layer Menu, 
+The Utility Menu is located to the right of the Drawing Window, above the Layer Menu.
 
 
   ![Image](/image/Figure 6 1 Utility Menu.jpg)
 
 ### Buttons
 
-  | Button    | Description |
-  | ----------- | ----------- |
-  | ![Image](/image/Utility_project_settings.jpg) | Project Settings, recalls the saved Project Settings. Click [here](#project-settings) for more information.|
-  | ![Image](/image/Utility_project_properties.jpg)   |Project Properties, amending feature properties. Click [here](#project-properties) for more information. |
-  | ![Image](/image/Utility_Create Schedule.jpg)   |Create Schedule, opens the scheduled mining & processing tonnages for each phase. Click here for more information.|
-  | ![Image](/image/Utility_Create Script.jpg)  | Create Script, Mineplan property creation & manipulation tool. Click here for more information.|
-  | ![Image](/image/Utility_Create Charts.jpg)   | Create Charts, charting facility for Mineplan & model properties display. Click here for more information.|
-  | ![Image](/image/Utility_report.jpg)   | Report, report CSV builder facility for the Mineplan data. Click here for more information.|
+  | Button    | Name | Description |
+  | ----------- | ----------- | ----------- |
+  | ![Image](/image/Utility_project_settings.jpg) | Project Settings | Recalls the saved Project Settings. Click [here](#441-project-settings) for more information.|
+  | ![Image](/image/Utility_project_properties.jpg)   |Project Properties | Amending feature properties, creating Legends, layer data speadsheets. Click [here](#442-project-properties) for more information. |
+  | ![Image](/image/Utility_Create Schedule.jpg)   |Create Schedule |Building Mineplans, opens the scheduled mining & processing phase tonnages. Click [here](#443-create-schedule) for more information.|
+  | ![Image](/image/Utility_Create Script.jpg)  | Create Script | Used for layer property creation & manipulation. Click [here](#444-create-script) for more information.|
+  | ![Image](/image/Utility_Create Charts.jpg)   | Create Charts | Charting facility for layer properties display. Click [here](#445-create-charts) for more information.|
+  | ![Image](/image/Utility_report.jpg)   | Report |Report CSV builder facility for the layer data. Click [here](#446-report-tool) for more information.|
+  | ![Image](/image/Leach_Model.jpg)   | Leach Model |Opens a window for leach extraction modelling inputs.|
+  | ![Image](/image/Stacking.jpg)   | Stacking |Opens the Leach Stacking Module window.|
+
 
 
 &nbsp;
@@ -727,9 +831,9 @@ The Utility Menu is located to the right of the Drawing Window, above the Layer 
 ####  4.4.1 Project Settings 
 
 
-Each project listed in Opencontour has its own set of Project Settings parameters. These parameters can be exported and imported as required.
+Each project listed in Opencontour has its own set of Project Settings parameters, initially saved in the setting up of a New Project. These parameters can be exported and imported as required..
 
-The project settings can be accessed by clicking the Project Settings button![Image](/image/Utility_project_settings.jpg) in the Utility Menu.  
+The project settings can be accessed by clicking the Project Settings button in the Utility Menu.
 
 The project window is divided into three distinct settings windows.
 
@@ -740,141 +844,137 @@ The project window is divided into three distinct settings windows.
 - [buildMineplan Settings](#buildMineplan-settings)
 
 
-After making any changes, click the **Save** button. These settings are stored in an online database and can be viewed from any computer connected to the internet. The user is redirected to the Drawing Window at the most recently viewed elevation.
+It is important to click the **Save** button after making any changes in this window. These settings are stored in an online database and can be viewed from any computer connected to the internet. 
 
   ![Image](/image/Figure 6 2 Project Settings Window.jpg)
 
 
 ##### Drawing Window Settings
 
-The Drawing Window Settings section controls what is visible and designed in the Drawing Window.
-
+The Drawing Window Settings section controls what is visible and design parameters in the Drawing Window.
 
 ##### Schedule Settings
 
-The Schedule Settings portion help to define the Filler’s Density - mass/volume (ton/ft3 or t/m3) and Swell.
+The Schedule Settings portion helps to deﬁne swell and densities.  These are used in the volumetric tonnage calculations for Cutters and Fillers.  The density value units entered should be in either ton/ft3 or t/m3.  Filler tonnages will include swell.
+
+The **Constraint** variable and the **Routing** variable are defined here.  The Constraint variable can be the property tons (data.tns) or truck calendar hours (data.trch).  It is the Mineplan block property that is referenced as the quantity to be scheduled.  This is the **Mine Constraint** value entered for each period in the in the Schedule window.  
+
+The **Routing** variable is used to determine if material is ore (>0) or waste (0).  This value controls where that block will be sent after mining.  Waste is sent directly to defined dumps, while ore is processed or stockpiled for beneficiation processes.
 
 
 ##### buildMineplan Settings. 
 
 
-The buildMineplan Settings portion of the window is used to set site-specific Model values in Opencontour to be written to the Mineplan. These properties are also used when the Schedule is run and will also be stored in the Mineplan layer. For instance, if the site makes use of the terms "specific gravity" or "relative density" rather than "density," this variable may be specified here.
+The buildMineplan Settings portion of the window is used to set site-speciﬁc Model values to be written to the Mineplan for open pit projects. 
+
+The **Density (dens)** entry is used to map the density Property when building the Mineplan.  This entry can be data.dens, a number, or an expression.
+
+It is necessary to have a routing variable **ow property (ow)**, data.ow in the Mineplan layer.  This value designates whether a block is ore or waste (greater than zero designates ore) and can determine downstream processing routes.
 
 
 ##### Auto Save (in minutes)
 
 
-This feature will not be available until the box is checked. The default saving interval is ten minutes, with a minimum of one minute between each saving interval.
-
-When the checkbox is selected, the interval will produce a backup of the All (Model) group file, including the Model layer. For example, “April 11, 2019-09.41.00AM pit1 all backup.json” is an example of a file name. If a project _all.json file is loaded the file name will replace “pit1_all”.
+When the checkbox is selected, the interval will produce a backup of the All (Model) group ﬁle, e.g.  “April 11, 2019-09.41.00AM pit1 all backup.json”. 
 
 <hr>
 
 #### 4.4.2 Project Properties 
 
 
-To open the Project Properties screen, click **Project Properties**![Image](/image/Utility_project_properties.jpg) button in the Utility Menu.
+To open the Project Properties screen, click Project Properties button in the Utility Menu.
 
  ![Image](/image/Figure 6 3 Project Properties Window.jpg)
 
 
-The properties window is divided into three distinct windows and Each of the three windows has its own function.
+The properties window is divided into three distinct tabs:
 
-- Layer Properties
+- Populate Properties 
 
-- buildMineplan Properties 
+- Spreadsheet
 
 - Legend
 
 
-##### Layer Properties
+##### Populate Properties
 
-The Layer Properties section at the top of this window is used to add a property to the currently selected layers. Properties can be added to a selected layer by typing the name of the property in the Property field in the Layer Properties dialog box.
+The Populate Properties section at the top of this window is used to add a property to the selected layer. Properties can be added by typing the name of the property in the Property ﬁeld in the Layer Properties dialog box.
 
 Typically, the Mineplan characteristics are modified. The shown list will contain all of the project's layers.
 
- ![Image](/image/Figure 6 4 Project Properties Choose Layer List.jpg)
+To add a property to a **layer**:
 
-To add a property to the **Mineplan layer**:
-
-1. Click the **Choose Layer** dropdown window in **Project Properties** portion. 
+1. Select the layer from the **Choose Layer** dropdown option.
 
     ![Image](/image/Project_properties.jpg)
 
 
-2. Select the layer **Mineplan**.
+2. Enter the name of the property
 
-3. Enter the name of the new property and the formula to calculate the property. The format of any formulae entered in the Property Value section should have the true and false values inside curly brackets.
+3. Enter the JavaScript formula to calculate the property. 
 
 4. Click **Populate Property** button.
 
-5. Click **Save** buton to store the information entered in the project.  
+5. Click **Save** button to store the information entered.
 
-#####  Property and Property Values
+##### Spreadsheet
 
-When referring to a Property in the **Mineplan** layer, the property is referred to without “data.” written before the property.  For example, if the property is data.au, a Property entry is written “au”.  
+The data of a chosen layer can be viewed in the Spreadsheet tab.  The information can be copied and pasted directly or can be exported as a CSV using the **Export CSV** button.  Changes can also be made and saved in the displayed table.
 
-  | If Statement    | Formatted Written Example |
-    | :-----------: | :-----------: |
-    | if(logical test){value if true}{value if false}| if(data.au>0.3){1}else{0} |
-
-&nbsp;&nbsp;
-
-Here is an example of a property formula entered for the Property Value.  Values and codes can be assigned in the **Property Value** field using text (“TEXT”), integers, and “If Statements”.If statements must contain the Else part of the equation; the value if false.  More script examples are in the document “JavascriptGuide.pdf”.
-
-
-If the values are reported with too many significant figures, use the formulae below (specifically, the “.toFixed(3)”) to refine your formula to three decimals
-
-  | Formatted Written Example   | Calculated Value | New value |
-  | :-----------: | :-----------: | :-----------: |
-  | +(data.dens*data.vol).toFixed(3)|56842.88861132361 | 56842.889 |
-
-&nbsp;&nbsp;
-
-#####	buildMineplan Properties
-
-The buildMineplan Properties section of the window builds the Mineplan using the entries in the **buildMineplan Settings** section of the **Project Settings** window. The **Mineplan layer** is built using the **CutterResult** shapes and the **buildMinepla**n function
-
-
-The blocks within the Model layer will estimate their tonnage using the density value, data.dens, specified in the Density (dens): field in the Project Settings, buildMineplan Settings. Outside the Model layer, the Density - mass/volume (ton/ft3 or t/m3): value in the Schedule Settings section will be used to estimate the tonnage.
-
-
-**justOre Checkbox**: a Mineplan that retains ore blocks but groups null (empty) waste blocks inside the CutterResult with grouped null waste records for each elevation shape.
 
 #####	Legend
 
-The Legend enables you to view a property that is shaded by color, even if it is not the active layer.
+The Legend tab enables viewing a property in the Drawing Window shaded by color.  One legend, with six property options is available.  There is only one Legend Name available per project. Individual rows may not be imported into an existing legend, nor exported.  Imported and exported legends should encompass the entire legend for the project.
 
+A previously exported legend can be imported and can be deleted pressing the **Delete** button.  The Legend is saved in the Config layer for the project; with a Group file save.  This layer also contains any saved Charts and the inputs from the Grid tab.
+
+The Legend is accessible using the Project Properties button from the Utility Menu, which opens the Project Properties screen with the Legend portion.
+
+To create a legend, follow these steps:
+
+  1. Press the **Project Properties** button.
+      - A previously saved legend may be imported using the **Choose File** button.
+  2.	Type in the property of interest to be shaded in the **Property** column, e.g. au.  The property entry must match the property case and syntax as contained in the Mineplan or Model layer.
+  3.	In the **Project Properties** window, enter in the numerical bins and shading colors in the same row.
+  4.	Press the **Save Legend** button to save this to the Project.  
+      - To save the legend for use in another project, tick the **Export** checkbox.  You will be prompted to save the Legend with the filename “legend.json”.  The saved Legend will appear in the dropdown list of saved legends for the project.  
+  5.	Close the **Project Properties** window.  Back in the **Drawing Window**, check the **Legend** box in the Screen Menu (or press the keyboard hotkey, l).   
+  6.	Select the layer that contains the property of interest in the dropdown box to the right, in the Legend portion of Screen Menu.     
+  7.	Select the legend property in the next box to the right and refresh the display by pressing the keyboard hotkeys, **q** or **w**. 
+
+    ![Image](/image/legend.jpg)
 <hr>
 
 #### 4.4.3 Create Schedule 
 
-To open the schedule window, click **Create Schedule**![Image](/image/Utility_Create Schedule.jpg) button in the Utility Menu. Please
+To open the schedule window, click **Create Schedule** button in the Utility Menu. A detailed description of this window is contained in the Scheduling section.
 
-  ![Image](/image/Figure 6 5 Schedule Window.jpg)
+The window contains three tabs:
+
+-	Build – used for building the Mineplan
+- Mine – creation and running of Mine schedules
+- Process - creation and running Process schedules
 
 <hr>
 
 #### 4.4.4 Create Script 
 
-To open the Script window, click **Create Script**![Image](/image/Utility_Create Script.jpg) button in the Utility Menu.
+To open the Script window, click the **Create Script** button in the Utility Menu.  
 
-  ![Image](/image/Figure 6 6 Script Window.jpg)
+Scripts are useful for adding or editing properties for a chosen layer.  The expressions are written in JavaScript and that involve calculations of other properties and/or numbers and can be time dependent.  
 
+- Scripts are used to add predefined properties to the Mineplan used in Quick Charts and Reports.
 
-Scripts can be written to run over the Mineplan before, during or after running a schedule.  The programming language used is JavaScript. To know more about script, refer to JavascriptGuide.pdf
+- Scripts can be written to run over the Mineplan before, during or after running a 
+schedule.
 
-
-A variable used in a script must either already exist in the layer on which it is working or be defined in the script's previous line. When an error occurs in a script, Opencontour generates error messages to assist the user in identifying the faulty line. If no errors occur, the script will execute with a message. Additionally, This message also tells you how many records are in the layer.
-
- ![Image](/image/Figure 6 7 Script Run Completion Message.jpg)
+- A variable used in a script must either already exist in the layer on which it is working or be deﬁned in the script's previous line. 
 
 <hr>
 
 #### 4.4.5 Create Charts 
 
-To open the charts window, click **Create Charts**![Image](/image/Utility_Create Charts.jpg) button in the Utility Menu. The Mineplan layer is the primary source of data for the charts, after the Schedule has been executed. Please
-
+To open the charts window, click **Create Charts** button in the Utility Menu. The Mineplan layer is the primary source of data for the charts, after the Schedule has been executed.  These are discussed in the Scheduling section 
 
   ![Image](/image/Figure 6 8 Upper Create Charts Window.jpg)
 
@@ -882,208 +982,139 @@ To open the charts window, click **Create Charts**![Image](/image/Utility_Create
 
 ####	4.4.6 Report Tool
 
+To open the report window, click **Report Tool** button in the Utility Menu.
 
-To open the report window, click **Report Tool**![Image](/image/Utility_report.jpg) button in the Utility Menu.
-
-  When executing a report, different browsers may display different export prompts (). Reports are generated over the Mineplan layer by specifying a grouping parameter, for example, "data.pm."
-
+When executing a report, diﬀerent browsers may display diﬀerent export prompts to capture the data. Reports are generated over the Mineplan layer by specifying a grouping parameter, for example, pm (period mined).
 
 <hr style="height:2px;border-width:0;color:gray;background-color:grey">
 
 ## 4.5 Layer Menu
 
-The **Layers Menu** is usually located on the right side of the project window. To activate a layer, click on the layer name in the **Layer Menu**. The layer will expand with a bold orange border. If the layer is active and the associated data is provided, the layer's parameters can be viewed and edited.
+To activate a layer, simply press on the layer writing in the Layer Menu.  The layer will expand with a bold orange border.  The properties of this layer can be viewed and edited while the layer is active.  
 
-  ![Image](/image/layer_Menu.jpg)
+When a file is loaded into a project, the originating file name for each layer will appear beside the layer, if the layer contains data. 
 
+  - The number of files added to a layer will also display in brackets.  The (2) is the count of the number of files added to the layer shown for the Cutter layer below.  
 
-- The horizontal scroll bar directly below the layer name in the **Layer Menu** can be used to adjust the darkness of each layer. Drag the bar left or right to adjust the darkness.
+      ![Image](/image/layer_Menu.jpg)
 
-- The three QuickButtons at the top of the Layer Menu, **All/None**, **Schedule** and **Drawing**, are used to efficiently turn the display of multiple layers in the Layer Menu on and off in a project. Click the **QuickButton** to turn on or off any layer in the **Layer Menu**.
+  - Cutter and Filler layers will display the Phase Name (pn) given to the layer after the **Cut Contours with Cutter/Filler** function has been performed.    
+
+  - The darkness of the Drawing Window display of a layer is editable using the blue horizontal scroll bar immediately below the layer name in the Layer Menu.  
+
+  - When inserting features at an elevation displayed in the Drawing Window, all features will be assigned that elevation until the elevation is changed.   
+
+  - The order of the layers listed in the Layer Menu can be changed by dragging each layer to the desired location.  The position of each will not be recalled on reopening the project.
+
+  - All Contours of an active layer can be displayed using the keyboard shortcut key, a, or pressing the radio button for All Contours radio button in View Settings.  These can be continually displayed in an overlay for the Base and BaseResult layers when changing between elevations (pressing either **q** or **w**) by ticking the Legend box in the Legend portion of the View Settings menu.   
+
+  - There are three QuickButtons at the top of the Layer Menu, All/No layers (![Image](/image/Three_quick_button.jpg) ), **Schedule** and **Drawing**. These are used to efficiently turn the display of multiple layers on and off in a project.  After a QuickButton is pressed, any layers in the Layer Menu can be turned on or off.  The layers displayed by each button are shown in the table below.  
+
 
   ![Image](/image/Table 7 1 Layer Menu QuickButtons.jpg)
 <hr>
 
+
 ### 4.5.1 Layer Geometry Types
-
-The following layer option is available from the Layers menu. To learn more about it, click on each layer.
-
-  | Layer  | &nbsp;&nbsp;la Property&nbsp;&nbsp; |
-  | :-----------: | :-----------: | 
-  | [Base](#base-layer) | ba | 
-  | Geotech | ge | 
-  | Cutter | cu | 
-  | Filler | fi | 
-  | BaseResult | rb | 
-  | CutterResult | cr | 
-  | Mineplan | mp | 
-  | Schedule | mo | 
-  | Model | ba | 
-  | Roads | ro | 
-  | Import | im | 
-
-&nbsp;&nbsp;
-
-<hr>
-
-### 4.5.2 Functions
-
-When a file is loaded into a Project, if the layer includes data, the layer's original file name appears beside the layer. Additionally, the number of files added to a layer will also display in brackets. **Cutter** and **Filler** layers will display the Phase Name (pn) given to the layer.
-
-  ![Image](/image/Figure 7 1 Layer Menu display, Showing Layer File Name Origin & Number Of Files.jpg)
-
-In the above example, The origin file name was “Tutorial3.2_ph1,2&Dump_all.json”, containing the layers shown.  Cutter1 was named ph1, Cutter2, ph2.  Filler3 was dump 1.  A second file was dragged in to the Filler3 layer.  See the Filler3 – dump1 (2) entry.  The (2) is the count of the number of files added to the layer.
-
-If the Layer Menu indicates that a layer has several files (as shown by the bracketed number), the layer should be checked for duplicate contours at each elevation. The menu can be expanded and collapsed. The order of the layers listed in the Layer Menu can be changed by dragging each layer to the desired location.
-
-<hr>
-
-### 4.5.3 Drag and Drop Files
-
-The drag and drop capability enables the user to drag a Group file or a single layer file into another layer.
-
-To drag & drop a file into a layer, first activate the layer. For example, dragging the Cutter file to the Base layer will add the Cutter file to the Base layer. To undo this, either perform a **ClearLayer** or restart the project. When a file is dragged onto an active layer that already includes data, the data from the dragged file is added to the existing data rather than being overwritten.
-
-
- **NOTE : When dragging a Group file or a single layer file, if no layer from the Layer Menu is selected as active, the layer will be added to the corresponding layers based on the file contents in the la property. When you save, the la property is written to a file. If you don't activate a layer, you'll get the same result as if you use the Dropdown Menu method. File/Open**
-<hr>
-
-### 4.5.4 Layer Geometry Types
 
 Each defined layer has a unique geometry type:
 
   ![Image](/image/Table 7 3 Layer Geometry Types.jpg)
 
 
-**Base Layer**: The Base layer represents the original surface as closed contour polygons.  The closed polygons or features can include ‘holes’ that represent voids in the solid contour.  For the features to be viewed in 3D, contour features cannot exist outside contour lines at lower elevations.
 
-**Cutter Layer**: Cutter layers represent contour lines that will create voids (pits) in the base layer.  For cutter layers to be viewed in 3D, contour features must encompass features at lower elevations.  Cutter layer features do not include ‘holes’.  
-
-
-**Filler Layer**: Filler layers represent contour lines that will add (fill) to the base layer.  For Filler layers to be viewed in 3D, contour features cannot exist outside contour lines at lower elevations.  Filler layer features do not include ‘holes’.
-
-**CutterResult**: include the result cuts when the Cut Contour with Cutter/Filler function is run.  This layer is overwritten each time the Cut Contour with Cutter/Filler function is run.
-
-**BaseResult**: the BaseResult layer is the resulting surface after the Cut Contour with Cutter/Filler function is run.  The BaseResult layer is overwritten each time the Cut Contour with Cutter/Filler function is run.
-<hr>
-
-### 4.5.5 Layers
+### 4.5.2 Layers
 
 #### Base Layer
 
 
-The Base layer includes the surface topography before any shapes are cut or filled. The features and shadings of the base layer are highlighted in red. The current elevation causes that contour to change to a solid feature with editable vertices. That contour is changed to a solid feature with editable vertices as the elevation changes.
+The Base layer includes the surface topography before any shapes are cut or filled in the project.  
+
+Base layer features and internal shadings are red. The current elevation causes that contour to change to a solid feature with editable vertices.
 
   ![Image](/image/Figure 7 5 Base layer Red Coloring.jpg)
 
 
-Importing a DXF file is a common method of creating base layers.
-
-
 #### Geotech Layer
 
-The features of the Geotech layer are blue with grey shading. These features do not change appearance with elevation changes.
+Geotech layer features are blue, with grey internal shading.  These features do not change appearance with elevation changes.
 
-To add Geotech:
+The Geotech layer options in the Layer Menu are displayed figure below.  The dropdown option in allows the user to select the geotechnical domain display of the entered Name or IRA_BFA information entered in the Geotech layer domain.
 
-1. Click on the **Geotech** layer in the **Layer Menu**.
-2. From the dropdown menu, choose any of the label options.
-
-    ![Image](/image/Figure 7 8 Layer Options, Geotech Layer.jpg)
-
-    - Geotech Layer, Name Option
-
-    ![Image](/image/Figure 7 9 Geotech Layer, Name Option.jpg)
-
-    - Geotech Layer, **IRA_BFA** Option
-
-    ![Image](/image/Figure 7 10 Geotech Layer, IRA_BFA Option.jpg)
+Domain addition is described in Part 2.
 
 
-3. To reload the page, press the **q** or **w** keys. The Drawing Window will update the display after refreshing.
+  ![Image](/image/Figure 7 8 Layer Options, Geotech Layer.jpg)
 
-4. Click the **addGeotech** button in the Layer Menu's Geotech section to add a new domain shape with the extents of the **Project Settings** coordinates at the current elevation indicated in the Message bar. Domains can also be added using the **Add Polygon** Features tool, in the Main Menu.
+  ![Image](/image/Figure 7 9 Geotech Layer, Name Option.jpg)
 
+  ![Image](/image/Figure 7 10 Geotech Layer, IRA_BFA Option.jpg)
 
 #### Cutter Layer
 
-The current elevation displayed in the Message bar causes the Cutter contour to change to a solid feature with editable vertices and internal shading if there is data on the elevation in the Cutter layer. Using the **Cutter Color** option, you can color multiple Cutter layers separately. 
+Viewing Cutter layer contours at the current elevation causes the contour to change to a solid feature with editable vertices and internal shading if there is data on the elevation in the Cutter layer.   
 
-The first Cutter layer features are dark blue, with lighter blue shading. Each cutter layer is colored by default, however the colors can be customized using the Cutter Color option. By default, the first Cutter is royal blue, the second is red, the third is fuchsia, etc.
+Each cutter layer has a default coloring, although the colors can be selected using the Cutter Color option.
 
-The Cutter layer number is incremented as **Cutters** and **Fillers** are added, and is recorded in the cut fill num property. By dragging files onto active Cutter or Filler layers, you can work around these assigned **Cutter** and **Filler** layer numbers. For example, to assign an exported JSON file from the **Cutter6** layer to the **Cutter3** layer, activate the **Cutter3** layer in the Layer Menu and drag the exported **Cutter6** JSON export file into the Drawing Window. Then, using the Dropdown Menu File/Clear Layer, delete the contents of the **Cutter6** layer.
+The Cutter layer number is incrementally assigned as Cutters and Fillers are added, recorded by the property **cut_fill_num**.  
+
+The Cutter layer options in the Layer Menu are displayed figure below.  The Phase Name (pn) can be entered for each Cutter layer, such as phase1, pit2, etc.  Underneath the Phase Name (pn) entry area in Figure below is the Direction (dir) property entry.  The Phase Name (pn) is written to the layer and is available for Label display on pressing Cut Contour with Cutter/Filler.  
+
+
+When projecting the Cutter contours to benches above and below, the Geotech or Project Settings’ **Cutter InterRampAngle (IRA)** and **Cutter Bench Face Angle (BFA)** are used.  The type will be written as ‘cut’.
 
   ![Image](/image/Figure 7 12 Layer Options, Cutter Layer.jpg)
-
-- Each Cutter layer can have a **Phase Name (pn)**, such as phase1, pit2, etc. When you press **Cut Contour using Cutter/Filler**, the **Phase Name (pn)** is written to the layer. This means that until the button **Cut Contour with Cutter/Filler** is pressed, the **Phase Name (pn)** will not be visible in the Drawing Window as a Label display.
-
-- The **Direction (dir)** property entry is located beneath the **Phase Name (pn)** entry area.  This is used to specify a strike cutting direction from 0-360 degrees (90 degrees represents East).  If this value is 0, the **Panel Window** direction entries  will be ignored.
-
-When drawing the Cutter, the **Cutter InterRampAngle (IRA)** and **Cutter Bench Face Angle (BFA)** from the **Project Settings** are applied. This is because the ramp widths and wall angles of Cutter material can be different for disturbed/mined material properties.
-
-If a DXF file is to be imported into a **Cutter** layer, it must be imported individually into an empty Cutter layer (see Dropdown Menu File/Clear Layer). It can then be saved as a Cutter JSON file. 
-
 
   ![Image](/image/Figure 7 14 Drawing Window Cutter Layer Properties After Cut Contours With CutterFiller.jpg)
 
 
 #### Filler Layer
 
-Filler layers are used for constructing dumps and leach pads. As with Cutters, if there is data on the elevation in the **Filler** layer, the current elevation displayed in the Message bar causes that contour to change to a solid feature with editable vertices and internal shading.
+Filler layers are used for constructing dumps and leach pads.  When drawing the Filler, the Project Settings’ **Filler InterRampAngle (IRA)** and **Filler Bench Face Angle (BFA)** are used, as set in the Project Settings.  As with Cutters, the current elevation causes that contour to display as editable vertices.  
 
-The **Filler** layer numbers (cut fill num) are assigned automatically based on the number of existing Cutter and Filler layers and order of creation.
+The Filler layer options in the Layer Menu are displayed figure below and are similar to the Cutter options.  The **cut_fil_num** is automatically assigned.  Each Filler layer has a default coloring, although the colors can be selected.  
 
-- Each **Filler** layer can have a unique **Phase Name (pn)**, for example, leach01 and dump5. When you press Cut Contour with Cutter/Filler (section 10.5), the **Phase Name (pn)** is written on the layer and the **CutterResult** layer. This means that until the button **Cut Contour with Cutter/Filler** is pressed, the **Phase Name (pn)** will not be visible as a Label display for the Filler in the Drawing Window.
+Underneath the Phase Name (**pn**) entry area is the stack Direction (**dir**) property entry.  This is used to specify a filling direction from 0-360 degrees (90 degrees represents East).  The **min_ow** and max_ow properties in Figure 7 15 are used to determine the ow property(**ow**) values accepted in that Filler.  For example, if the Filler is not designed to accept ow property (**ow**) values of 3 in a project where the maximum ow property (**ow**) value is 3, the min_ow can be 0 and max_ow property 2.  The max_ow property default it set to 10000.  The entries accepted only include numbers.
 
-- The stack Direction (dir) property entry is located beneath the **Phase Name (pn)** entry area. This is used to indicate the direction of filling from 0-360 degrees (90 degrees represents East).
+The Filler layer Properties are editable in the Drawing Window.  After pressing the button **Cut Contour with Cutter/Filler** the properties are written to the layer.  The Filler layer will be a ‘Fill’ type record using the Filler material density and swell, specified in the Schedule Settings portion of the Project Settings window or in the Layer Menu.  
 
-- The layers are also assigned default colors, editable by changing the **Filler Color** in the Layer Menu. Multiple **Filler** layers can be colored separately by choosing different colors, but they are by default assigned different shades.
-
-- When drawing the Filler, the **Filler InterRampAngle (IRA)** and **Filler Bench Face Angle (BFA)** from the **Project Settings** are used. Ramp widths and slope angles for **Filler** material can be different to in situ (Cutter) material properties.  When drawing the **Filler**, the slope of the stack can be determined using the **Project Settings' Filler InterRampAngle (IRA)** and **Filler Bench Face Angle (BFA)**, or the **Geotech** layer IRA and BFA.
+DXF files can also be imported and saved into Filler layers. 
 
 ![Image](/image/Figure 7 16 Drawing Window Filler Layer Properties Before Cut Contours With Cutter-Filler.jpg)
 
 ![Image](/image/Figure 7 17 Drawing Window Filler Layer Properties After Cut Contours With Cutter-Filler.jpg)
 
 
-- In the **Drawing Window**, you can edit the **Filler** layer's properties. After clicking the button **Cut Contour** using **Cutter/Filler Main Menu**, the Cutter layer's properties cut fill num, **Phase Name (pn)**, **Drection (dir)**, **Min ow**, and **Max ow** are written. The **Phase Name (pn)** for each shape is assigned to the **CutterResult** layer, which will be a 'Fill' type record using the Filler material density and swell specified in the **Schedule Settings** section of the **Project Settings** window.
-
-
-- If a DXF file is to be imported into a **Cutter** layer, it must be imported individually into an empty Cutter layer (see **Dropdown Menu File/Clear Layer**). It can then be saved as a Cutter JSON file.
-
-
 
 #### BaseResult Layer
 
-BaseResult layer features are orange, with lighter orange shading.  The current elevation causes that contour to change to a solid feature with editable vertices and internal shading.
+These features display orange, with lighter orange internal shading.  The BaseResult layer shows the project surface contours after the pit has been cut (mined), and/or waste dump and leach pads have been filled.  The BaseResult layer becomes populated by using the **Cut Contour with Cutter/Filler** operation for those layers ticked on in the Layer Menu and is overwritten each time the function is run.  
+
+The Dropdown Menu’s **Display > Contour** By PM function is used to create period maps or the BaseResult layer for a given period of mining.  
+
+ ![Image](/image/Drawing Window ButterResult Layer Properties.jpg)
 
  ![Image](/image/Figure 7 18 BaseResult Layer Coloring.jpg)
 
 
- The **BaseResult** layer shows the project surface contours after the pit has been cut (mined), and/or the waste dump and leach pads have been filled. This is the final topography once mining activity is completed, which can be accessed by hitting the keyboard shortcut key, **a**, or by selecting the **All Contours** radio button in **View Settings**.
-
- By clicking the **Legend** box in the **Legend** portion of the **View Settings** menu, all contours of the **Base** or **BaseResult** layer can be displayed continuously in an overlay when changing elevations (by pressing either **q** or **w**). Press the **a** key to activate the Base or **BaseResult** layer. The **Cut Contour** with **Cutter/Filler** operation populates the **BaseResult** layer.
-
- **Display/Contour By PM** function is used to create period maps for a given period of mining.  These contours are populated in the **BaseResult** layer for viewing and export.
-
 
 #### CutterResult Layer
 
-CutterResult layer features are lime colored.
+CutterResult layer features are lime colored and shaded at the current contour. The CutterResult layer is the result cut and filled shapes representing the material cut (phases mined) or filled (waste and ore material dumped/stacked).  This layer also populates by using the **Cut Contour with Cutter/Filler** operation for those layers ticked on in the Layer Menu and is also overwritten each time the function is run.  
 
-The shape shown in the **CutterResult** layer is the result cut polygon representing the material cut (mined) or filled (dumped).  This layer is populated by using the Cut Contour with **Cutter/Filler** operation.  This information is also used in the **Volumetric/Summary** function of the **Dropdown Menu**.
-
-When the Cut Contour function is called, **CutterResult** will be build for the layers selected in the Layer Menu. The **CutterResult** layer is frequently used to stack leachpads.
-
+The cut and filled volumes are used in the Dropdown Menu’s **Display>Volumetric** function options.
 
  ![Image](/image/Figure 7 25 Drawing Window CutterResult Layer Properties For A Filler Type Contour.jpg)
 
 
 #### Mineplan Layer
 
-The Mineplan layer is used to store a subset of the block model data that exists within the **cutterResult** layer shapes.  The **Schedule / Build** function is used to populate this layer.
+The Mineplan layer is used to store a subset of the block model data that exists within the CutterResult layer shapes for projects with pits.  This layer is populated using the **Create Schedule > Build function**.  For leach stacking projects, the Mineplan layer will initially contain an ore type (ow), period mined (pm), ore tonnages (otns) and grades.
 
-Additional properties can also be added/edited in the **Mineplan** layer by clicking the **Project Properties** button in the Main Menu. For more details for the mineplan layer, refer to the Schedule instruction.
+
+Other properties can also be added/edited in the by pressing the Project Properties button in the Main Menu.  The **Legend** can be used to display colored blocks based on their grade.
+
+More details for the Mineplan layer are included in the Schedule instruction.
 
 
  ![Image](/image/Mineplan layer grades and legend color.jpg)
@@ -1091,73 +1122,80 @@ Additional properties can also be added/edited in the **Mineplan** layer by clic
 
 #### Schedule Layer
 
-This layer includes all of the features required for the Schedule. (fleets, location icons, etc.) 
-Each schedule Feature can be dragged to its preferred horizontal plane location using the **Main Menu's** Drag features button. While doing this operation, it may be useful to hide other layers to avoid dragging them to undesirable positions. When features are inserted at an elevation indicated in the **Drawing Window**, that elevation is allocated to all features.
+This layer includes all the features required for the Schedule (truck and loader fleets, processing, stockpiles, leach pads, dumps, haulage route intersections, etc).  Each schedule feature added may be dragged to its desired location by utilizing the **Drag Features** button from the Main Menu.  
+
+When inserting features at an elevation displayed in the Drawing Window, all features will be assigned that elevation.  This can be changed using the z: property in the Properties window.  
+
+More details are included in the Schedule instruction.
+
+#### Model Layer
+
+The model layer can be used to store the geological block model for a project with pits.  This layer does not contain drawings.  It is used up to the **Create Schedule > Build** function process, where a subset of the model volume within the pit is built and stored in the Mineplan layer.  Once the Mineplan has been constructed, the Model is rarely used for an open pit project.  The **Legend** and **Labels** can be used to display colored blocks based on their grade.
+
+  1. To open a Model file, select the Dropdown Menu’s File/Open Model function. 
+  2.	Select the location of the model JSON file.  A progress indicator will be displayed while the Model is loading.  The loaded model filename will be displayed in the Layer Menu beside Model layer. 
+  3.	Once a model file has been added to the project it’s parameters can be displayed using **Legend** and **Labels** at each elevation.  
+  4.	Press the **q** or **w** keys to refresh the screen.  
+  5.	Move to an elevation of interest and left mouse click once on one of the numbers displayed in the Drawing Window to view what other information is available on that block.  To view the full display pan outside the display window.
 
 
-## 4.6 Screen Menu
+  The Model layer is also used to store the grid for leach stacking projects.  The grid discretizes the CutterResult layer into uniform blocks that can be scheduled.  
 
-The actions performed on the screen menu have an effect on the content displayed in the Drawing Window. The Screen Menu options are initially retrieved from the Project Settings panel. The button on the far left of the Message bar can be used to collapse or extend this menu.
+  More information on grids stored the Model layer for stacking projects is in the Stacking documentation.
 
-**NOTE: The Screen Menu settings are temporary and will be lost upon saving and restarting a project. To ensure continuity in a project, the values and options selected/entered will only be retained in the project if they are entered in the Project Settings window button in the Utility Menu.**
+  ![Image](/image/Model Layer Properties – Leach Panel Stacking Project.jpg)
+
+  ![Image](/image/model_layer_property.jpg)
+
+  ![Image](/image/model_layer_result.jpg)
+
+
+#### Solution Layer
+
+Leach stacking projects will include a Solution layer, added by choosing the **Add Layer>Add Solution Layer** from the Main Menu.  This layer represents the functionality in turning solution on (on) and off (off) for selected polygon shapes.  These shapes can be built using the **Add Polygon Features** button to contain the centroids of CutterResult panels on any elevation of the CutterResult layer.  
+
+The drawn polygon and its properties will be visible at below elevations coinciding with the CutterResult layer.  The Solution layer will populate the CutterResult and Mineplan layer’s on/off properties as a number for records inside the Solution layer polygon and CutterResult shape.  
+
+  ![Image](/image/Solution Layer.jpg)
+
+
+#### Roads Layer
+
+Roads layer features are blue as shown in figure below. They turn bold red when the road segment has a scheduling error (i.e. grade is >15%), or after activating the All Contours function (pressing a). The segment information is also displayed activating the All Contours function.
+
+More details for the Roads layer are included in the Schedule instruction.
+
+ ![Image](/image/road Layer.jpg)
+
+![Image](/image/Detail Displayed On Pressing The a Key.jpg)
+
+
+#### Import Layer
+
+The Import layer can be used when importing CAD type files, such as updated topographies and as-build surfaces.  This layer can be used to draw or correct what is stored in the other layers in the Layer Menu that contain contours, geotechnical information, Cutters, Fillers and Roads.
+
+
+## 4.6 View Settings
+
+The options chosen in the View Settings portion are initially sourced from the Project Settings window.  They affect what is displayed in the Drawing Window.  This menu can be collapsed and expanded using the button on the far left of the Message bar  ![Image](/image/view_settings_button.jpg).   
+
+The options in View Settings are a temporary setting only and will not be retained in the saving and reopening of a project.  To ensure continuity in a project, the values and options selected/entered will only be retained in the project if they are entered in the Project Settings window button in the Utility Menu
 
 ![Image](/image/Screen_Menu.jpg)
 
 ![Image](/image/Screen_Menu_table_1.jpg)
 
-![Image](/image/Screen_Menu_table_2.jpg)
-
-
-
-#### Labels
-
-To make the selected property visible in the **Drawing Window**, select the layer from the dropdown menu and turn it on in the **Layer Menu**.  Layers can contain the same properties, such as data.pn, and all layers that are checked in the **Layer Menu** will display this label.
-
-
-#### Legend
-
-The Legend allows you to customize the display colors and bins. One legend, with six property options is available.  Individual rows cannot be imported or exported into an existing legend. There is a limit of one Legend Name per project. Legends that are imported and exported should encompass the entire legend for the project.
-
-![Image](/image/Legend.jpg)
-
-To access the legend, click the **Utility Menu > Project Properties** option. The Project Properties screen, which contains the Legend section, will be displayed.
-
-To create a legend in a project, use the following instructions:
-
-1. Click the **Project Properties** button.
-
-2. Enter the Legend name in the **Legend Name** section.
-
-3. Enter the desired shaded property, overwriting the entry in the Property column. The property entry must match the property case and syntax as contained in the Mineplan or Model layer.
-
-4. Enter the numerical bins and shading colors in the **Project Properties** window.
-
-5. Click **Add Legend** button to import a previously exported legend by browsing to the file. Click **Delete** button to remove the imported legend.
-
-6. To save this to the Project, click the **Save Legend** button. Click the **Export** checkbox if you wish to create a saved export file of the Legend for use in another project. You will be prompted to save the Legend with the filename “legend.json”, rename this to “Au_legend.json”. The saved Legend will appear in the dropdown list of saved legends for the project.
-
-
-
-7. Check the **Legend** box in the **Screen Menu** of the Drawing Window (or press the keyboard shortcut, **'l'**). Select the Layer containing the desired Property and then select it in the Legend section of the **Screen Menu**.
+![Image](/image/Elevation Position Terminology.jpg)
 
 
 
 ## 4.7 Message Bar
 
-The Message bar is located between the **Drawing Window** and the **Screen Menu**. 
+The Message bar, between the Drawing Window and View Settings, reports strike, wall angles, and distances (when Measure tool is used). Easting and Northing coordinates, elevation, and bench position are also reported.
+
+The elevation will indicate if the contour elevation is at the MidBench, Bench or NonBench level.  This bench position display is to the right of the elevation
+
 
 ![Image](/image/message_bar.jpg)
 
-
-The Message bar displays the follwing information:
-
-- Strike
-
-- Wall angles
-
-- Distances (when the measuring tool is used)
-
-- The easting and northing coordinates, elevation, and position of the bench.
-
-The elevation position indicates whether the contour is at the MidBench, Bench, or NonBench elevation level.
 
