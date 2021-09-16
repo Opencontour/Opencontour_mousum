@@ -17,7 +17,7 @@ For new user registration, follow the instructions below.
 
     The Opencontour registration page appears.
 
-    ![Image](/image/Register.jpg)  
+    ![Image](../image/Register.jpg)  
 &nbsp;
 
 2. Click **Sign-Up**. A new window will appear.

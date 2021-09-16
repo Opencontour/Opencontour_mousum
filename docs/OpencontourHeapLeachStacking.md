@@ -48,7 +48,7 @@ The Leach Stacking module window provides several conﬁguration tab options:
 
 1. Click **Utility Menu  > Stacking**. The Leach Stacking module window will appear with the **Home Tab** open.
 
-![Image](/image/Leach Stacking module.jpg)
+![Image](../image/Leach Stacking module.jpg)
 
 The Home tab displays a status indicator light for completed process stages.
 
@@ -63,7 +63,7 @@ The Home tab displays a status indicator light for completed process stages.
 - Populate Mineplan 
 
 **Progress Indicator Lights Color Status**
-![Image](/image/Progress Indicator Lights Color Status.jpg)
+![Image](../image/Progress Indicator Lights Color Status.jpg)
 
 
 <hr>
@@ -83,23 +83,23 @@ The Discretize button separates the CutterResult shapes using the Model layer's 
 
 1.	The **Discretize** button separates the CutterResult shapes using the Model layer's grid and adds the block panel properties for each panel to the CutterResult layer. Using the ‘For Model’ checkbox populates properties for full blocks that have their centroid in the CutterResult shape only.
 
-    ![Image](/image/Discretize Button.jpg)
+    ![Image](../image/Discretize Button.jpg)
 
 
 2. After the Discretize process is complete, a conﬁrmation message will appear, indicating the quantity of new blocks created. Select the **OK** option. If no blocks were created the Discretize function failed. In that instance the Model layer should be checked in the Drawing Window to ensure it encompasses the entire CutterResult shapes (including elevation and spatially). The function should be re-run after this check.
 
-  ![Image](/image/Figure 4 53 Confimation After Discretize Function Is Run.jpg)
+  ![Image](../image/Figure 4 53 Confimation After Discretize Function Is Run.jpg)
 
 
 **NOTE: There is a message warning the user against repeatedly hitting the button if the CutterResult layer has not changed since the previous execution of the Discretize function.**
 
-  ![Image](/image/Figure 4 54 Re-run Warning Message.jpg)
+  ![Image](../image/Figure 4 54 Re-run Warning Message.jpg)
 
 
 
 **Grid Properties Assigned To The CutterResult Layer During Discretize**
 
-![Image](/image/Grid Properties Assigned To The CutterResult Layer During Discretize.jpg)
+![Image](../image/Grid Properties Assigned To The CutterResult Layer During Discretize.jpg)
 
 
 <hr>
@@ -133,7 +133,7 @@ This file must contain:
 
 The **Populate Mineplan** button in the Leach Stacking **Home tab** will distribute the Mineplan tons into each discretized CutterResult shape. The filler sequence, direction (dir), density (dens) and ow designations (min and ow max) are considered in this function.  A message will appear stating how many Mineplan blocks have been created, as shown.
 
-![Image](/image/populate mineplan button.jpg)
+![Image](../image/populate mineplan button.jpg)
 
 
 **Note:**
@@ -146,11 +146,11 @@ The **Populate Mineplan** button in the Leach Stacking **Home tab** will distrib
 
 **Properties are added to both the Mineplan layer**   
 
-![Image](/image/Properties are added to both the Mineplan layer.jpg)
+![Image](../image/Properties are added to both the Mineplan layer.jpg)
 
 **Properties are added to the CutterResult layer**
 
-![Image](/image/Properties are added to the CutterResult layer.jpg)
+![Image](../image/Properties are added to the CutterResult layer.jpg)
 
 <hr>
 
@@ -166,7 +166,7 @@ Click **Utility Menu  > Stacking  > Grid Tab**. The Leach Stacking Module grid t
 
 The radio button option Manual Grid uses the entries in this window.
 
-![Image](/image/Manual Grid Radio Button.jpg)
+![Image](../image/Manual Grid Radio Button.jpg)
 
 
 
@@ -204,9 +204,9 @@ The BenchHeight parameter in the Project Settings will determine the lift height
 
 The **Direction** speciﬁes the direction in which the panel sequence (seq) numbers are ordered. Select the direction option from either the **X Direction** or **Y Direction** dropdown menu and then click the radio button to set the dominant direction.
 
-  ![Image](/image/Figure 4 63 Grid Direction Tab X Direction Options.jpg)
+  ![Image](../image/Figure 4 63 Grid Direction Tab X Direction Options.jpg)
 
-  ![Image](/image/Grid Direction Tab X Direction Options.jpg)
+  ![Image](../image/Grid Direction Tab X Direction Options.jpg)
 
 
 
@@ -214,7 +214,7 @@ The **Direction** speciﬁes the direction in which the panel sequence (seq) num
 
 This is initially populated by the **Project Settings**, **Block Rotate** (degrees clockwise). The **Angle Offset** (degrees) is used to rotate the alignment of the specified grid when cutting the CutterResult layer.  By measuring the strike of the CutterResult panels, this angle entry can be deduced.  An entry of zero represents the North used for unrotated leach pad projects. If possible, a zero rotation angle is strongly suggested (rotated models do not work in the Leach Recovery Modelling module). 
 
-  ![Image](/image/Angle Offset (degrees).jpg)
+  ![Image](../image/Angle Offset (degrees).jpg)
 
 
 
@@ -227,7 +227,7 @@ The X Origin and Y Origin are located in the bottom-left (Southwest) corner of t
 
 For reference, the viewExtentMin and viewExtentMax for the X and Y directions from the **Project Settings** are written in bold where the Origins are entered. 
 
-  ![Image](/image/X Origin and Y Origin.jpg)
+  ![Image](../image/X Origin and Y Origin.jpg)
 
 If the **Fix** box is ticked, the origin entries will be maintained in the **Preview**.  Unticking this box allows repositioning in the Drawing Window. The **X Origin** and **Y Origin** will be initially populated by the **Project Settings** : **viewExtentMinx** and **viewExtentMiny**.
 
@@ -267,7 +267,7 @@ This grid dataset will be used to represent the leach stacking model, which will
 Properties written to the Model layer during the **Build** function are written in the following table, common to all elevations:
 
 
-![Image](/image/Build function.jpg)
+![Image](../image/Build function.jpg)
 
 
 #### Provided Grid Radio Button
@@ -276,9 +276,9 @@ Properties written to the Model layer during the **Build** function are written 
 Select the **Provided Grid** radio button to populate the grid with data from the imported DXF grid. When the **Provided Grid** radio button is selected, the lower portion of the entries will be removed from the Grid tab window. Manual entry is still required for the **Lift Height**, **Z Origin**, and **Direction Portion**.
 
 
-  ![Image](/image/Figure 4 73 Example DXF Grid Stored In The Import Layer.jpg)
+  ![Image](../image/Figure 4 73 Example DXF Grid Stored In The Import Layer.jpg)
 
-  ![Image](/image/Provided Grid Radio Button.jpg)
+  ![Image](../image/Provided Grid Radio Button.jpg)
 
 
 
@@ -294,7 +294,7 @@ To begin drawing on the Solution layer, the layer must first be added to the Lay
 2. Select the Solution tab and click the **Add Solution** button.  The Solution layer will appear in the **Layer Menu** and will be active.
 
 
-  ![Image](/image/Adding the Solution Layer.jpg)
+  ![Image](../image/Adding the Solution Layer.jpg)
 
 
 The **Add Solution** button will create a Solution layer at the top of the **Layer Menu**. This layer contains entries to populate the ‘on’, ‘app_rate’ and ‘lt’ properties in the CutterResult and Mineplan layers.
@@ -316,9 +316,9 @@ Next, follow the below steps:
 
 **NOTE:** **A solution layer feature’s properties can be viewed and edited at any time with the Solution layer active and viewing the properties display.**
 
-![Image](/image/Drawing Solution Layer Leach Shapes.jpg)
+![Image](../image/Drawing Solution Layer Leach Shapes.jpg)
 
-![Image](/image/Drawing Solution Layer Leach Shapes2.jpg)
+![Image](../image/Drawing Solution Layer Leach Shapes2.jpg)
 
 #### Update Solution Layer Properties
 
@@ -327,7 +327,7 @@ Solution layer features that do not already have the properties application rate
 
 **NOTE: The polygon must be drawn above the CutterResult's elevation.**
 
-![Image](/image/Update Solution Layer Properties.jpg)
+![Image](../image/Update Solution Layer Properties.jpg)
 
 
 ### Stacking Procedure
@@ -340,7 +340,7 @@ There are two categories of stacking:
 
 - **Forecast Stacking** – Stacking future material, building on the Historical Stacking surface.  
 
-![Image](/image/Stacking_folder-structure.jpg)
+![Image](../image/Stacking_folder-structure.jpg)
 
 #### Historical Stacking
 

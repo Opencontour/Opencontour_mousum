@@ -21,14 +21,14 @@ ____________________________________________________________________
 
 The project dashboard displays a list of recent projects, along with their descriptions and creation dates. For new users, the projects list will be initially empty. If you are an existing user, you can view the list of projects.
 
-![Image](/image/dashboard.jpg)
+![Image](../image/dashboard.jpg)
 
 
 ### Setting up a Project for New User
 
 1. Click the **New Project** button in the upper right corner. A new window will appear.
 
-    ![Image](/image/New proejct Details.jpg)
+    ![Image](../image/New proejct Details.jpg)
 &nbsp;
 
 2.	Enter the Project Name and Description of the project.
@@ -36,7 +36,7 @@ The project dashboard displays a list of recent projects, along with their descr
 3.	Click **Next**. A Settings window with configuration options will appear.
 
 
-    ![Image](/image/Setting page.jpg)
+    ![Image](../image/Setting page.jpg)
 
     **NOTE: The parameters are pre-populated with default values and should be adjusted for your project.**
 
@@ -108,7 +108,7 @@ The project dashboard displays a list of recent projects, along with their descr
 
 1.	In the dashboard, existing users can see a list of all the projects that they are currently working on.
 
-    ![Image](/image/Setting up project for existing user.jpg)
+    ![Image](../image/Setting up project for existing user.jpg)
 &nbsp;
 
 2.	To proceed with a project, select it from the list. It will direct you to the project's page.    
