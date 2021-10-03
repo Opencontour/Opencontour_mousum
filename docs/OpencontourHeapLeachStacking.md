@@ -327,7 +327,7 @@ Solution layer features that do not already have the properties application rate
 
 **NOTE: The polygon must be drawn above the CutterResult's elevation.**
 
-![Image](../image/Update Solution Layer Properties.jpg)
+![Image](../image/UpdateSolutionLayerProperties.jpg)
 
 
 ### Stacking Procedure
