@@ -23,7 +23,7 @@ The following steps are then followed:
 1.	Load or build the Grid, stored in the Model layer (needs to be completed once for the project) 
 2.	Break up, or Discretize the CutterResult shapes into shapes using a grid
 
-3.	Import the Mineplan 
+3.	Import the Mineplan (CSV or JSON file).  If importing a CSV, this layer should be saved as a JSON file for later use and to save importing time. 
 
 4.	Use the **Populate Mineplan** function to populate the CutterResult shapes with a timestamp (pm) and Mineplan property information, including grades.
 
@@ -125,6 +125,8 @@ This file must contain:
 -	ore type (ow, always a number)
 
 -	period stacked (pm) in Excel serial (general) format, i.e. 43914
+
+If importing a CSV, the Mineplan layer should be saved in Opencontour for later use and to save re-importing.
 
 <hr>
 
@@ -286,18 +288,15 @@ Select the **Provided Grid** radio button to populate the grid with data from th
 
 #### Adding the Solution Layer
 
-To begin drawing on the Solution layer, the layer must first be added to the Layer Menu. To add the layer, follow the steps below:
+To begin drawing on the Solution layer, the layer must first be added to the Layer Menu. To add the layer, Do this by:
 
+Clicking the grouped Add Layer function in the Main Menu, select the Add Solution Layer button,![Image](../image/Add_solution_layer.jpg). This adds and activates the Solution layer.  This layer contains entries to populate the ‘on’, ‘app_rate’ and ‘lt’ properties in the CutterResult and Mineplan layers.
 
-1. Click **Utility Menu > Stacking**. The Leach Stacking module window will appear with the **Home tab** open.
-
-2. Select the Solution tab and click the **Add Solution** button.  The Solution layer will appear in the **Layer Menu** and will be active.
 
 
   ![Image](../image/Adding the Solution Layer.jpg)
 
 
-The **Add Solution** button will create a Solution layer at the top of the **Layer Menu**. This layer contains entries to populate the ‘on’, ‘app_rate’ and ‘lt’ properties in the CutterResult and Mineplan layers.
 
 #### Drawing Solution Layer Leach Shapes
 
@@ -322,7 +321,11 @@ Next, follow the below steps:
 
 #### Update Solution Layer Properties
 
-Solution layer features that do not already have the properties application rate (app_rate, gpm/ft2 or L/m2/hr) and Leach time (lt, days) populated can be added using the Update Solution function.  This is accessed from **Utility Menu > Stacking > Solution**.  The **Update Solution** function will use the Solution layer to populate the CutterResult and Mineplan layer’s ‘on’ and ‘lt’ properties with a value for each record centroid contained within the **Solution** layer polygon.  The CutterResult layer will have the ‘app_rate’ property written to it.
+Using the **Properties** display the individual features can be viewed and updated.  These are listed in the table below.
+
+Solution layer features that do not already have values populated for application rate (app_rate, gpm/ft2 or L/m2/hr) and Leach time (lt, days) can be added in bulk using the Update Solution function.  This is accessed from **Utility Menu > Stacking > Solution**.  The **Update Solution** function will use the Solution layer to populate the CutterResult, Model and Mineplan layer’s ‘on’ and ‘lt’ properties with a value for each record centroid contained within the **Solution** layer polygon.  The CutterResult layer will have the ‘app_rate’ property written to it.
+
+Click **Utility Menu > Stacking**. The Leach Stacking module window will appear with the Home tab open.  The Solution tab is displayed below.
 
 
 **NOTE: The polygon must be drawn above the CutterResult's elevation.**
@@ -365,7 +368,9 @@ A good place to store the Grid file is under the ‘Working’, because it is us
 
 **Step 4 - Mineplan**
 
-Once the CSV file is created, it is imported into the Mineplan layer and the **Populate Mineplan** function from the Leach Stacking Module can be run.
+Once the CSV file is created, it is imported into the Mineplan layer. This layer should be saved as a JSON file for later use and to save re-importing.
+
+The **Populate Mineplan** function can be run from the Leach Stacking Module.  
 
 After running the **Populate Mineplan** function the CutterResult layer should be exported and clearly named, e.g., LP30_EOM_YearMonth_CR.json.  Save this in the folder ‘05_CutterResults’.
 
@@ -404,7 +409,9 @@ The previously constructed grid, e.g. ‘ProjectName_100x100_model.json’ can b
 
 **Step 4 - Mineplan**
 
-A CSV can be built using the forecast Mineplan data, using the properties previously described.  The **Populate Mineplan** function is run, with no adjustments in the filler densities.  
+A CSV can be built using the forecast Mineplan data, using the properties previously described. This layer should be saved as a JSON file for later use.  This will save time, rather than repeating the import process for a CSV.
+  
+The **Populate Mineplan** function is run, with no adjustments in the filler densities.  
 
 **Step 5 - 3D Visualization**
 
