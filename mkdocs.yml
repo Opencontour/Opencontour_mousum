@@ -11,3 +11,11 @@ theme:
     name: material
     palette:
         primary: green
+extra:
+  alternate:
+    - name: English
+      link: /documentationoc/en 
+      lang: en
+    - name: Spanish
+      link: /documentationoc/es
+      lang: es
